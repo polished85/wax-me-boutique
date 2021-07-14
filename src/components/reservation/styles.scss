@@ -1,0 +1,40 @@
+@import "../../style/variables.scss";
+
+.reservation {
+	text-align: center;
+	padding: 4.5rem 0;
+	margin-bottom: 6rem;
+	.vagaro {
+		width: 100%;
+		a {
+			font-size:1.4rem; 
+			color:#aaa; 
+			text-decoration:none;
+		}
+	}
+	.vagaro-container {
+		&.vagaro-embedded-widget {
+			.vagaro-iframe {
+
+			}
+		}
+	}
+	.vagaro-footer {
+		visibility: hidden;
+	}
+	@media(max-width: 767px){
+
+	}
+
+	@media(min-width: 768px){
+
+	}
+
+	@media(min-width: 992px){
+
+	}
+
+	@media(min-width: 1200px){
+
+	}
+}

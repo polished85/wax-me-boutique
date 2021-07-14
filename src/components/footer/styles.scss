@@ -1,0 +1,81 @@
+@import "../../style/variables.scss";
+
+.footer {
+	background-color: $theme_main;
+	color: #aaa;
+	position: relative;
+	width: 100%;
+	padding: 2rem 0;
+	overflow: hidden;
+	min-height: 40rem;
+	h3 {
+		color: #fff;
+		text-align: left;
+	}
+	.col {
+		display: flex;
+		flex-direction: column;
+		padding: 0 1.5rem;
+	}
+	.hours {
+		text-align: left;
+	}
+	.legal {
+		width: 100%;
+		padding: 2rem 0;
+		border-top: 1px solid #aaa;
+		color: #aaa;
+		text-align: center;
+		margin-top: 3rem;
+	}
+	.btn-primary {
+		color: #fff;
+		border-color: #fff;
+	}
+	.social-icons {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		> li {
+			a {
+				opacity: .5;
+				transition: opacity .25 ease-in-out;
+				&:hover,
+				&:focus {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	@media(max-width: 767px){
+		.col {
+			width: 100%;
+		}
+	}
+
+	@media(min-width: 768px){
+		.col {
+			width: 50%;
+			&.col-signup {
+				width: 100%;
+			}
+		}
+	}
+
+	@media(min-width: 992px){
+		.col {
+			width: 20%;
+			&.col-signup {
+				width: 40%;
+			}
+		}
+	}
+
+	@media(min-width: 1200px){
+
+	}
+}

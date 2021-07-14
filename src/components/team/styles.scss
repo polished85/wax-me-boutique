@@ -1,0 +1,29 @@
+@import "../../style/variables.scss";
+
+.our-team {
+	position: relative;
+	width: 100%;
+	padding: 0;
+	overflow: hidden;
+	margin-bottom: 6rem;
+	.content {
+		text-align: center;
+	}
+	h4 {
+		color: $theme_dark_green;
+		font-style: italic;
+	}
+	p {
+
+	}
+	.image {
+		img {
+			width: 100%;
+		}
+	}
+	@media(min-width: $screen-md-up){
+		.row {
+			justify-content: center;
+		}
+	}
+}

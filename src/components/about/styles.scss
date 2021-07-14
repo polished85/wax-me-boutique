@@ -1,0 +1,29 @@
+@import "../../style/variables.scss";
+
+.about {
+	margin-bottom: 6rem;
+	.image {
+		width: 100%;
+		margin-bottom: 3rem;
+	}
+	.ar-16-9 {
+		width: 100%;
+		padding-bottom: 56.25%;
+		position: relative;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+	.content {
+		text-align: center;
+	}
+	@media(min-width: $screen-md-up){
+
+	}
+}

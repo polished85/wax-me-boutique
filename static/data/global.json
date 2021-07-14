@@ -1,0 +1,120 @@
+{
+	"nav": {
+		"logo": {
+			"src": "/img/logo.jpg",
+			"url": "/",
+			"title": "wax, skin, tan"
+		},
+		"links": [
+			{
+				"name": "Home",
+				"url": "/",
+				"external": false
+			},
+			{
+				"name": "Brows",
+				"url": "/services/brows",
+				"external": false
+			},
+			{
+				"name": "Waxing",
+				"url": "/services/waxing",
+				"external": false
+			},
+			{
+				"name": "Facial Treatments",
+				"url": "/services/facial-treatments",
+				"external": false
+			},
+			{
+				"name": "Sunless Tan",
+				"url": "/services/sunless-tan",
+				"external": false
+			},
+			{
+				"name": "Blog",
+				"url": "https://waxmeboutique.wordpress.com",
+				"external": true
+			}
+		]
+	},
+	"footer":{
+		"legal": "&copy; 2021 Wax Me Boutique&mdash;All rights reserved.",
+		"address": "7730 Herschel Avenue Suite F La Jolla, CA 92037",
+		"email": "info@waxmeboutique.com",
+		"hours": [
+			{
+				"day": "Monday",
+				"start": "10:00",
+				"end": "18:00"
+			},
+			{
+				"day": "Tuesday",
+				"start": "9:00",
+				"end": "19:00"
+			},
+			{
+				"day": "Wednesday",
+				"start": "9:00",
+				"end": "19:00"
+			},
+			{
+				"day": "Thursday",
+				"start": "9:00",
+				"end": "19:00"
+			},
+			{
+				"day": "Friday",
+				"start": "9:00",
+				"end": "19:00"
+			},
+			{
+				"day": "Saturday",
+				"start": "9:00",
+				"end": "14:00"
+			},
+			{
+				"day": "Sunday",
+				"start": "0",
+				"end": "0"
+			}
+		],
+		"phone": [
+			"858-224-8126",
+			"858-822-8626"
+		],
+		"social": {
+			"title": "Connect With Us",
+			"items": [
+				{
+					"icon": "/icons/facebook.svg",
+					"url": "https://www.facebook.com/WaxMeBoutique/"
+				},
+				{
+					"icon": "/icons/twitter.svg",
+					"url": "https://twitter.com/waxmeboutique"
+				},
+				{
+					"icon": "/icons/yelp.svg",
+					"url": "https://www.yelp.com/biz/wax-me-boutique-la-jolla"
+				},
+				{
+					"icon": "/icons/instagram.svg",
+					"url": "https://www.instagram.com/waxmeboutique/"
+				},
+				{
+					"icon": "/icons/youtube.svg",
+					"url": "https://www.youtube.com/channel/UCPKwxPDm82HS-Qy2cW0WLOA"
+				}
+			]
+		},
+		"reservation": {
+			"title": "Book an appointment",
+			"text": "Please book in advance to get the best service from us. We wishing you a great day. Thanks!",
+			"cta": { 
+				"text": "Book now",
+				"url":"https://www.vagaro.com/Users/BusinessWidget.aspx?BusinessID=48649&IsPopup=0&TabsIncluded=1|99|100&b_themeID=&w_type=2&widgetversion=3&isShowMobileApp=False&tabatlaunch=3"
+			}
+		}
+	}
+}

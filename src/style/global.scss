@@ -1,0 +1,106 @@
+html {
+	font-size: 62.5%;
+}
+body {
+	margin: 0;
+	font-family: $font-default;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	color: $theme_gray;
+	box-sizing: border-box;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+body * {
+	box-sizing: border-box;
+}
+h1,h2,h3 {
+	font-family: $font-title;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+	text-align: center;
+	color: $theme_main;
+}
+h1,h2 {
+	position: relative;
+	&::after {
+		display: block;
+	    margin-right: auto;
+	    margin-left: auto;
+	    content: " ";
+	    display: block;
+	    width: 3rem;
+	    margin-top: 1.5rem;
+	    height: 0;
+	    border-top: 1px solid #444;
+	}
+}
+img {
+	max-width: 100%;
+}
+
+@font-face {
+	font-style: normal;
+	font-weight: 700;
+	font-family: 'Montserrat';
+	src: url('/fonts/Montserrat-Bold.eot');
+	src: url('/fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/Montserrat-Bold.woff2') format('woff2'),
+		url('/fonts/Montserrat-Bold.woff') format('woff'),
+		url('/fonts/Montserrat-Bold.otf') format('opentype'),
+		url('/fonts/Montserrat-Bold.ttf')  format('truetype');
+}
+
+.btn-primary {
+	transition: all 0.4s;
+	display: inline-block;
+	padding: 1.5rem 4rem;
+	font-size: 1.2rem;
+	font-weight: 700;
+	outline: none;
+	word-spacing: .2rem;
+	line-height: 1.2;
+	text-align: center;
+	background-color: transparent;
+	text-decoration: none;
+	border: 2px solid transparent;
+	transition: background-color .25s ease-in-out, border-color .25s ease-in-out, color .25s ease-in-out;
+	text-transform: uppercase;
+	&.light {
+		border-color: $theme_gray;
+		color: $theme_gray;
+	}
+	&.dark {
+		border-color: #fff;
+		color: #fff;
+	}
+	&:hover {
+		background-color: $theme_dark_green;
+		color: #fff;
+		border-color: #fff;
+	}
+}
+
+.bg-green {
+	background-color: $theme_green;
+}
+.bg-dark-green {
+	background-color: $theme_dark_green;
+}
+.bg-lavender {
+	background-color: $theme_lavender;
+}
+.bg-blue {
+	background-color: $theme_blue;
+}
+.bg-pink {
+	background-color: $theme_pink;
+}
+.theme-dark {
+	color: #fff;
+}
+.theme-light {
+	color: #444;
+}

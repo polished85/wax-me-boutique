@@ -1,0 +1,51 @@
+@import "../../style/variables.scss";
+
+.instagram {
+	padding: 4.5rem 0;
+	margin-bottom: 6rem;
+	.image {
+		position: relative;
+		margin: 0 0 30px;
+		display: flex;
+		img {
+			width: 100%;
+		}
+		.hover-content {
+			position: absolute;
+			top: 15px;
+			left: 15px;
+			right: 15px;
+			bottom: 15px;
+			opacity: 0;
+			background-color: rgba(255,255,255,.75);
+			transition: opacity .25s ease-in-out;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			p {
+				&:after {
+					display: block;
+					margin-right: auto;
+					margin-left: auto;
+					content: " ";
+					display: block;
+					width: 3rem;
+					margin-top: 1.5rem;
+					height: 0;
+					border-top: 1px solid $theme_gray;
+				}
+			}
+		}
+		&:hover {
+			.hover-content {
+				opacity: 1;
+			}
+		}
+	}
+
+	@media(min-width: $screen-md-up){
+		.row {
+			justify-content: center;
+		}
+	}
+}

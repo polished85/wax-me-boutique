@@ -1,0 +1,39 @@
+@import "../../style/variables.scss";
+
+.video-hero {
+	box-shadow: 0 1rem 1rem rgba(0,0,0,.15);
+	margin-bottom: 6rem;
+	.ar-16-9 {
+		width: 100%;
+		padding-bottom: 56.25%;
+		position: relative;
+		> .video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #fff;
+			background-image: url('/img/video-bg.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	}
+
+	@media(max-width: $screen-sm-down){
+
+	}
+
+	@media(min-width: $screen-md-up){
+
+	}
+
+	@media(min-width: $screen-lg-up){
+
+	}
+
+	@media(min-width: $screen-xl-up){
+
+	}
+}
