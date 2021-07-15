@@ -1,5 +1,4 @@
 <script context="module">
-	// see https://kit.svelte.dev/docs#loading
 	export const load = async ({ page, fetch, session, context }) => {
 		var page
 		// set active page
@@ -18,7 +17,10 @@
 		if (res.ok) {
 			const data = await res.json();
 			return {
-				props: { data, page }
+				props: { data, page},
+				context:  {
+					nav: data.nav
+				}
 			};
 		}
 

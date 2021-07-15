@@ -1,16 +1,36 @@
 <script context="module">
-
+	let data
+	export async function load({ page, fetch, session, context }) {
+		data = context.nav.links
+		return true
+	}
 </script>
 
 <script>
 	import Reservation from '$lib/reservation/index.svelte';
-	export let posts;
 </script>
 
 <style lang="scss">
+	@import '../../style/variables.scss';
 	ul {
 		margin: 0 0 1em 0;
 		line-height: 1.5;
+		list-style: none;
+		li {
+			border-bottom: 1px solid $theme_main;
+			a {
+				display: block;
+				padding: 1rem;
+				color: $theme_main;
+				font-size: 1.5rem;
+				font-weight: 700;
+				text-decoration: none;
+				&:hover {
+					background-color: $theme_lavender;
+					color: #000;
+				}
+			}
+		}
 	}
 </style>
 
@@ -20,14 +40,9 @@
 
 <div class="container">
 	<h1>Services</h1>
-
 	<ul>
-		{#each posts as post}
-			<!-- we're using the non-standard `rel=prefetch` attribute to
-					tell Sapper to load the data for the page as soon as
-					the user hovers over the link or taps it, instead of
-					waiting for the 'click' event -->
-			<li><a rel='prefetch' href='services/{post.slug}'>{post.title}</a></li>
+		{#each data as service}
+			<li><a rel='{service.external ? "external" : ""}' href='{service.url}'>{service.name}</a></li>
 		{/each}
 	</ul>
 </div>
