@@ -1,9 +1,30 @@
 <style lang="scss" global>
 	@import "styles.scss";
+	.footer .btn-map {
+		display: inline-flex;
+		align-items: center;
+		cursor: pointer;
+	    padding: 0 4rem 0 2rem;
+	    height: 4.8rem;
+		svg {
+			margin-right: 1rem;
+		}
+	}
 </style>
 
 <script>
+	import { MapPinIcon } from 'svelte-feather-icons';
+	import Modal from '$lib/modal/index.svelte';
+
 	export let data;
+	let modalOpen = false 
+
+	function openModal (){ 
+		modalOpen = true
+	}
+	function closeModal (){ 
+		modalOpen = false
+	}
 </script>
 
 <footer class="footer">
@@ -28,6 +49,10 @@
 				<div class="content">
 					<h3>Address</h3>
 					<p>{data.address}</p>
+					<button type="button" class="btn-primary btn-map" on:click={openModal}>
+						<MapPinIcon size="20" />
+						<span>Map</span>
+					</button>
 				</div>
 			</div>
 			<div class="col-12 col-md-6 col-lg-3">
@@ -55,4 +80,16 @@
 		</div>
 		<div class="legal">{@html data.legal}</div>
 	</div>
+
+	<Modal modalOpen="{modalOpen}" closeModal="{closeModal}">
+		<figure class="ar-responsive">
+			<iframe 
+				class="map"
+				src="{data.map}" 
+				frameborder="0" 
+				allowfullscreen="" 
+				aria-hidden="false" 
+				tabindex="0"></iframe>
+		</figure>
+	</Modal>
 </footer>
