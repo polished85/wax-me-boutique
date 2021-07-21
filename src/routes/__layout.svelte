@@ -45,7 +45,7 @@
 
 <Nav page="{page}" data="{data.nav}" />
 
-<main>
+<main class="main">
 	<slot />
 </main>
 
