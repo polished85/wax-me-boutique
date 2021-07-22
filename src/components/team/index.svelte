@@ -7,6 +7,8 @@
 </script>
 
 <div class="our-team">
+	<img src="/img/laser-therapy.jpg" />
+	
 	<div class="container">
 		<h2>{data.title}</h2>
 		<div class="row">
