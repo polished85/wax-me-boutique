@@ -29,6 +29,6 @@
 </script>
 
 <Video></Video>
+<Reservation data="{data.reservation}"></Reservation>
 <OurTeam data={data.team}></OurTeam>
 <About data={data.about}></About>
-<Reservation data="{data.reservation}"></Reservation>
