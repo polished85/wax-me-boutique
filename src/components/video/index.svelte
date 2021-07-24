@@ -177,10 +177,10 @@
 			bind:muted
 			bind:this={videoEl}>
 			<source 
-				src="/video/test.webm"
+				src="/video/hero-1080.webm"
 				type="video/webm">
 			<source 
-				src="/video/test.mp4"
+				src="/video/hero-1080.mp4"
 				type="video/mp4">
 			<track kind="captions">
 		</video>
