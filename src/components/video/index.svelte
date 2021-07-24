@@ -94,8 +94,7 @@
 
 <script>
 	import { onMount } from 'svelte'
-	import { PauseIcon,  PlayIcon, RefreshCwIcon, Volume2Icon, VolumeXIcon,
-		PauseCircleIcon,  PlayCircleIcon } from 'svelte-feather-icons';
+	import { PauseIcon,  PlayIcon, RefreshCwIcon, Volume2Icon, VolumeXIcon } from 'svelte-feather-icons';
 
 	// onMount(function(){
 	// 	paused = false
@@ -178,10 +177,10 @@
 			bind:muted
 			bind:this={videoEl}>
 			<source 
-				src="/video/hero-1080.webm"
+				src="/video/test.webm"
 				type="video/webm">
 			<source 
-				src="/video/hero-1080.mp4"
+				src="/video/test.mp4"
 				type="video/mp4">
 			<track kind="captions">
 		</video>
