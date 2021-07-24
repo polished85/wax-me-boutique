@@ -67,55 +67,55 @@
 			text-align: center;
 		}
 		nav {
-	    position: fixed;
-	    top: 0;
-	    left: 0;
-	    bottom: 0;
-	    background: #000;
-	    width: 80%;
-	    transform: translateX(-100%);
-	    transition: transform .25s ease-in-out;
-	    > ul {
-	    	padding: 0 2rem;
-	    	> li {
-	    		> a {
-	    			display: inline-block;
-	    			width: 100%;
-	    			color: #fff;
-	    			text-decoration: none;
-		    		text-transform: uppercase;
-		    		padding: 2rem 0;
-		    		border-bottom: 1px solid #444;
-		    		&:hover,
-		    		&:active,
-		    		&:focus {
-		    			color: #84C340;
+		    position: fixed;
+		    top: 0;
+		    left: 0;
+		    bottom: 0;
+		    background: #000;
+		    width: 80%;
+		    transform: translateX(-100%);
+		    transition: transform .25s ease-in;
+		    > ul {
+		    	padding: 0 2rem;
+		    	> li {
+		    		> a {
+		    			display: inline-block;
+		    			width: 100%;
+		    			color: #fff;
+		    			text-decoration: none;
+			    		text-transform: uppercase;
+			    		padding: 2rem 0;
+			    		border-bottom: 1px solid #444;
+			    		&:hover,
+			    		&:active,
+			    		&:focus {
+			    			color: #84C340;
+			    		}
 		    		}
-	    		}
-	    		.dropdown {
-	    			height: 0;
-	    			overflow: hidden;
-	    			transition: height .25s ease-in-out;
-	    			> ul {
-	    				> li {
-	    					padding-left: 2rem;
-	    					> a {
-	    						display: inline-block;
-	    						width: 100%;
-	    						padding: 1.5rem 0;
-	    						color: #fff;
-	    						text-decoration: none;
-	    					}
-	    				}
-	    			}
-	    		}
-	    		&:last-child {
-	    			> a {
-	    				border-bottom: 0;
-	    			}
-	    		}
-	    	}
-	    }
+		    		.dropdown {
+		    			height: 0;
+		    			overflow: hidden;
+		    			transition: height .25s ease-in-out;
+		    			> ul {
+		    				> li {
+		    					padding-left: 2rem;
+		    					> a {
+		    						display: inline-block;
+		    						width: 100%;
+		    						padding: 1.5rem 0;
+		    						color: #fff;
+		    						text-decoration: none;
+		    					}
+		    				}
+		    			}
+		    		}
+		    		&:last-child {
+		    			> a {
+		    				border-bottom: 0;
+		    			}
+		    		}
+		    	}
+		    }
 		}
 		.hamburger {
 			display: block;
@@ -131,6 +131,7 @@
 				+ nav {
 					transform: translateX(0);
 					overflow: auto;
+					transition-timing-function: ease-out;
 				}
 			}
 		}
