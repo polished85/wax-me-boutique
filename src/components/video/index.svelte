@@ -94,11 +94,7 @@
 
 <script>
 	import { onMount } from 'svelte'
-	import { PauseIcon,  PlayIcon, RefreshCwIcon, Volume2Icon, VolumeXIcon } from 'svelte-feather-icons';
-
-	// onMount(function(){
-	// 	paused = false
-	// })
+	import { PauseIcon,  PlayIcon, RefreshCwIcon, Volume2Icon, VolumeXIcon } from 'svelte-feather-icons'
 
 	let videoEl
 	let pauseIcon
