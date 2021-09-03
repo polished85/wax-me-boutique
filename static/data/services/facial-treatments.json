@@ -10,7 +10,13 @@
 	"hero" :{
 		"theme": "light",
 		"color": "blue",
-		"image": "/img/facial-treatments.jpg"
+		"image": {
+			"ar": "16-7",
+			"fit": "cover",
+			"width": 1920,
+			"height": 840,
+			"path": "/img/facial-treatments.jpg"
+		}
 	},
 	"main": {
 		"title": "Facial Treatments",

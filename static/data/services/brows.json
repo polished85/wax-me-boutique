@@ -10,7 +10,13 @@
 	"hero" :{
 		"theme": "light",
 		"color": "pink",
-		"image": "/img/brows.jpg"
+		"image": {
+			"ar": "16-7",
+			"fit": "cover",
+			"width": 1920,
+			"height": 840,
+			"path": "/img/brows.jpg"
+		}
 	},
 	"main": {
 		"title": "Brows",

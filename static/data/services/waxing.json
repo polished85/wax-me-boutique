@@ -10,7 +10,13 @@
 	"hero" :{
 		"theme": "light",
 		"color": "lavender",
-		"image": "/img/waxing.jpg"
+		"image": {
+			"ar": "16-7",
+			"fit": "cover",
+			"width": 1920,
+			"height": 840,
+			"path": "/img/waxing.jpg"
+		}
 	},
 	"main": {
 		"title": "Waxing",

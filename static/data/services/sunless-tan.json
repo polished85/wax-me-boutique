@@ -10,7 +10,13 @@
 	"hero" :{
 		"theme": "light",
 		"color": "lavender",
-		"image": "/img/sunless-tan.jpg"
+		"image": {
+			"ar": "16-7",
+			"fit": "cover",
+			"width": 1920,
+			"height": 840,
+			"path": "/img/sunless-tan.jpg"
+		}
 	},
 	"main": {
 		"title": "Sunless Tan",
