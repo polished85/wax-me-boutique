@@ -156,43 +156,45 @@
 </script>
 
 <div class="video-hero">
-	<div class="ar-16-9">
-		<video
-			class="video"
-			poster="/img/video-bg.jpg"
-			loop="true" 
-			playsinline="true"
-			autoplay="true" 
-			on:mousemove={handleMove}
-			on:touchmove|preventDefault={handleMove}
-			on:mousedown={handleMousedown}
-			on:mouseup={handleMouseup} 
-			bind:currentTime={time}
-			bind:duration
-			bind:paused
-			bind:muted
-			bind:this={videoEl}>
-			<source 
-				src="/video/hero-1080.webm"
-				type="video/webm">
-			<source 
-				src="/video/hero-1080.mp4"
-				type="video/mp4">
-			<track kind="captions">
-		</video>
+	<div class="container">
+		<figure class="ar-16-9">
+			<video
+				class="video"
+				poster="/img/video-bg.jpg"
+				loop="true" 
+				playsinline="true"
+				autoplay="true" 
+				on:mousemove={handleMove}
+				on:touchmove|preventDefault={handleMove}
+				on:mousedown={handleMousedown}
+				on:mouseup={handleMouseup} 
+				bind:currentTime={time}
+				bind:duration
+				bind:paused
+				bind:muted
+				bind:this={videoEl}>
+				<source 
+					src="/video/hero-1080.webm"
+					type="video/webm">
+				<source 
+					src="/video/hero-1080.mp4"
+					type="video/mp4">
+				<track kind="captions">
+			</video>
 
-		<div class="controls" style="opacity: {duration && showControls ? 1 : 0}">
-			<div class="info">
-				<time class="time">{format(time)}</time>
-				<div class="buttons">
-					<button on:click={() => (paused = !paused)}><svelte:component size="22" this={pauseIcon}/></button>
-					<button on:click={() => (muted = !muted)}><svelte:component size="22" this={volumeIcon}/></button>
-					<button on:click={() => (time = 0)}><RefreshCwIcon size="22" /></button>
-					<!-- <span>click anywhere to {paused ? 'play' : 'pause'} / drag to seek</span> -->
+			<div class="controls" style="opacity: {duration && showControls ? 1 : 0}">
+				<div class="info">
+					<time class="time">{format(time)}</time>
+					<div class="buttons">
+						<button on:click={() => (paused = !paused)}><svelte:component size="22" this={pauseIcon}/></button>
+						<button on:click={() => (muted = !muted)}><svelte:component size="22" this={volumeIcon}/></button>
+						<button on:click={() => (time = 0)}><RefreshCwIcon size="22" /></button>
+						<!-- <span>click anywhere to {paused ? 'play' : 'pause'} / drag to seek</span> -->
+					</div>
+					<time class="time">{format(duration)}</time>
 				</div>
-				<time class="time">{format(duration)}</time>
+				<progress value="{(time / duration) || 0}"/>
 			</div>
-			<progress value="{(time / duration) || 0}"/>
-		</div>
+		</figure>
 	</div>
 </div>

@@ -1,12 +1,14 @@
 @import "../../style/variables.scss";
 
 .video-hero {
-	box-shadow: 0 1rem 1rem rgba(0,0,0,.15);
+	
 	margin-bottom: 6rem;
 	.ar-16-9 {
 		width: 100%;
 		padding-bottom: 56.25%;
+		margin: 0;
 		position: relative;
+		box-shadow: 0 1rem 1rem rgba(0,0,0,.15);
 		> .video {
 			position: absolute;
 			top: 0;
@@ -18,6 +20,14 @@
 			background-size: cover;
 			background-position: center;
 			background-repeat: no-repeat;
+		}
+	}
+
+	@media(max-width: $screen-md-down){
+		.container {
+			padding: 0;
+			max-width: 100%;
+			margin: 0;
 		}
 	}
 
