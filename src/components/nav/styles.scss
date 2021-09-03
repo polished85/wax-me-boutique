@@ -1,5 +1,4 @@
 @import "../../style/variables.scss";
-@import "hamburger.scss";
 
 .header {
 	position: relative;
@@ -14,7 +13,7 @@
 		}
 	}
 	
-	.hamburger {
+	.btn-toggle-nav {
 		display: none;
 	}
 
@@ -63,6 +62,22 @@
 	}
 
 	@media(max-width: 767px){
+		.overlay-bg {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: #000;
+			visibility: hidden;
+			opacity: 0;
+			transition: visibility .15s ease-in, opacity .15s ease-in;
+			z-index: 0;
+			&.is-active {
+				opacity: .65;
+				visibility: visible;
+			}
+		}
 		.logo {
 			text-align: center;
 		}
@@ -75,6 +90,7 @@
 		    width: 80%;
 		    transform: translateX(-100%);
 		    transition: transform .25s ease-in;
+		    z-index: 1;
 		    > ul {
 		    	padding: 0 2rem;
 		    	> li {
@@ -117,17 +133,30 @@
 		    	}
 		    }
 		}
-		.hamburger {
-			display: block;
+		.btn-toggle-nav {
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			position: absolute;
 			top: 0;
 			right: 0;
+			width: 40px;
+			height: 40px;
+			border-radius: 40px;
+			padding: 3px;
+			background: none;
+			z-index: 1;
+			border: 2px solid #fff;
+			cursor: pointer;
 			&:hover,
 			&:focus {
 				outline: 0;
-				border: 0;
+			}
+			&:active {
+				background: rgba(0,0,0,.25);
 			}
 			&.is-active {
+				color: #fff;
 				+ nav {
 					transform: translateX(0);
 					overflow: auto;
@@ -138,6 +167,9 @@
 	}
 
 	@media(min-width: 768px){
+		.overlay-bg {
+			display: none;
+		}
 		&.home {
 			.logo {
 				padding:0;

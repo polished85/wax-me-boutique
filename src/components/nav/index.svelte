@@ -3,6 +3,7 @@
 </style>
 
 <script>
+	import { XIcon, MenuIcon } from 'svelte-feather-icons';
 	export let page;
 	export let data;
 	let mobileActive = false
@@ -18,11 +19,13 @@
 
 		<button 
 			type="button"
-			class="hamburger hamburger--slider {mobileActive ? "is-active" : ""}" 
+			class="btn-toggle-nav {mobileActive ? "is-active" : ""}" 
 			on:click={() => { mobileActive = !mobileActive }}>
-		  <span class="hamburger-box">
-		    <span class="hamburger-inner"></span>
-		  </span>
+			{#if mobileActive}
+				<XIcon />
+			{:else}
+				<MenuIcon />
+			{/if}
 		</button>
 
 		<nav>
@@ -36,4 +39,5 @@
 			</ul>
 		</nav>
 	</div>
+	<div class="overlay-bg {mobileActive ? "is-active" : ""}" on:click={() => { mobileActive = false }}></div>
 </div>
