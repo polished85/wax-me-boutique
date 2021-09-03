@@ -21,6 +21,7 @@
 
 
 <script>
+	import Image from '$lib/image/index.svelte';
 	import Reservation from '$lib/reservation/index.svelte';
 	export let data;
 </script>
@@ -47,20 +48,7 @@
 	.hero {
 
 	}
-	.ar-16-7 {
-		width: 100%;
-		padding-bottom: 43.75%;
-		position: relative;
-		img {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			object-position: center;
-		}
-	}
+
 	@media(max-width: $screen-md-down){
 
 	}
@@ -77,9 +65,7 @@
 </svelte:head>
 
 <header class="hero bg-{data.hero.color} theme-{data.hero.theme}">
-	<div class="ar-16-7">
-		<img src="{data.hero.image}" />
-	</div>
+	<Image data={data.hero.image}></Image>
 </header>
 
 <main class="main">
