@@ -18,10 +18,7 @@
 		if (res.ok) {
 			const data = await res.json();
 			return {
-				props: { data, pageName},
-				stuff:  {
-					nav: data.nav
-				}
+				props: { data, pageName}
 			};
 		}
 
