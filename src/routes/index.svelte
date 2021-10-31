@@ -29,7 +29,7 @@
 	import Reservation from '$lib/reservation/index.svelte';
 	import About from '$lib/about/index.svelte';
 	import OurTeam from '$lib/team/index.svelte';
-	//import Instagram from '$lib/instagram/index.svelte';
+	import Instagram from '$lib/instagram/index.svelte';
 	
 	export let data;
 	let heroImage = {
@@ -49,3 +49,4 @@
 <Reservation data="{data.reservation}"></Reservation>
 <OurTeam data={data.team}></OurTeam>
 <About data={data.about}></About>
+<Instagram />
