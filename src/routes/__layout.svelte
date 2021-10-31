@@ -1,14 +1,15 @@
 <script context="module">
 	export const load = async ({ page, fetch, session, context }) => {
-		var page
+		
 		// set active page
+		var pageName 
 		if(typeof page.params.slug !== 'undefined'){
-			page = page.params.slug
+			pageName = page.params.slug
 		} else {
 			if(page.path === '/'){
-				page = 'home'
+				pageName = 'home'
 			} else {
-				page = page.path.substring(1)
+				pageName = page.path.substring(1)
 			}
 		}
 
@@ -17,7 +18,7 @@
 		if (res.ok) {
 			const data = await res.json();
 			return {
-				props: { data, page},
+				props: { data, pageName},
 				stuff:  {
 					nav: data.nav
 				}
@@ -35,7 +36,7 @@
 <script>
 	import Nav from '$lib/nav/index.svelte';
 	import Footer from '$lib/footer/index.svelte';
-	export let page;
+	export let pageName;
 	export let data;
 </script>
 
@@ -43,7 +44,7 @@
 	@import "../style/index.scss";
 </style>
 
-<Nav page="{page}" data="{data.nav}" />
+<Nav pageName="{pageName}" data="{data.nav}" />
 
 <main class="main">
 	<slot />
