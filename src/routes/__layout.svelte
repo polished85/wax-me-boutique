@@ -31,7 +31,7 @@
 </script>
 
 <script>
-	// import Nav from '$lib/nav/index.svelte';
+	import Nav from '$lib/nav/index.svelte';
 	import Footer from '$lib/footer/index.svelte';
 	export let pageName;
 	export let data;
@@ -41,7 +41,7 @@
 	@import "../style/index.scss";
 </style>
 
-<!-- <Nav pageName="{pageName}" data="{data.nav}" /> -->
+<Nav pageName="{pageName}" data="{data.nav}" />
 
 <main class="main">
 	<slot />
