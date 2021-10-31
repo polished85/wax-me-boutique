@@ -1,5 +1,5 @@
 <script context="module">
-	export const load = async ({ page, fetch, session, context }) => {
+	export const load = async ({ page, fetch, session, stuff }) => {
 		
 		// set active page
 		var pageName 
@@ -18,7 +18,10 @@
 		if (res.ok) {
 			const data = await res.json();
 			return {
-				props: { data, pageName}
+				props: { data, pageName},
+				stuff:  {
+					nav: data.nav
+				}
 			};
 		}
 

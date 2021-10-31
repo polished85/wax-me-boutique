@@ -1,7 +1,7 @@
 <script context="module">
 	let data
-	export async function load({ page, fetch, session, context }) {
-		data = context.nav.links
+	export async function load({ page, fetch, session, stuff }) {
+		data = stuff.nav.links
 		return true
 	}
 </script>
