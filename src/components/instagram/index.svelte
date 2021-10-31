@@ -3,8 +3,29 @@
 </style>
 
 <script>
+	import instagram from 'user-instagram'
+	
 	let data = [1,2,3,4,5,6,7,8]
 	let active = 0
+
+	const username = 'polishedweb85' 
+	const password = '6Wo&yGp2Grr!L@FE'
+
+	;(async () => {
+		await instagram.authenticate(username, password);
+		// Fetching a user
+		instagram.getUserData('wax-me-boutique').then(userData => {
+			// Do whatever you need to to with this data
+			console.log(`My username is ${userData.getUsername()}.`);
+		})
+
+		// Fetching a post
+		// instagram.getPostData('CUc7tBPFXvP').then(postData => {
+			// // Do whatever you need to to with this data
+			// console.log(`The caption of this post is ${postData.getCaption()}.`);
+		// })
+	})()
+
 </script>
 
 <div class="instagram">
