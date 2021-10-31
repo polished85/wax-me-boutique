@@ -4,13 +4,13 @@
 
 <script>
 	import { XIcon, MenuIcon } from 'svelte-feather-icons';
-	export let page;
+	export let pageName;
 	export let data;
 	let mobileActive = false
 	let mobileActiveDropdown = null
 </script>
 
-<div class="header {page}">
+<div class="header {pageName}">
 	<div class="container-xl">
 
 		<div class="logo">
@@ -31,12 +31,12 @@
 		<nav>
 			<ul>
 				{#each data.links as link, i}
-					<li class:active='{page.toLowerCase() === link.name.toLowerCase()}' 
+					<li class:active='{pageName.toLowerCase() === link.name.toLowerCase()}' 
 						on:click={() => { mobileActive = false }}>
 						<a rel='{link.external ? "external" : ""}' href='{link.url}'>{link.name}</a>
 					</li>
 				{/each}
-				<!-- <li><a rel=prefetch class:active='{page === "services"}' href='services'>services</a></li> -->
+				<!-- <li><a rel=prefetch class:active='{pageName === "services"}' href='services'>services</a></li> -->
 			</ul>
 		</nav>
 	</div>
