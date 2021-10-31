@@ -1,5 +1,5 @@
 <script context="module">
-	export const load = async ({ page, fetch, session, context }) => {
+	export const load = async ({ page, fetch, session, stuff }) => {
 		var page
 		// set active page
 		if(typeof page.params.slug !== 'undefined'){
@@ -18,7 +18,7 @@
 			const data = await res.json();
 			return {
 				props: { data, page},
-				context:  {
+				stuff:  {
 					nav: data.nav
 				}
 			};
