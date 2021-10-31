@@ -11,7 +11,7 @@
 
 <script context="module">
 	// see https://kit.svelte.dev/docs#loading
-	export const load = async ({ page, fetch, session, stuff }) => {
+	export const load = async ({ page, fetch, session, context }) => {
 		const res = await fetch('/data/about.json');
 
 		if (res.ok) {

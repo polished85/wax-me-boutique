@@ -1,5 +1,5 @@
 <script context="module">
-	export const load = async ({ page, fetch, session, stuff }) => {
+	export const load = async ({ page, fetch, session, context }) => {
 		var page
 		// set active page
 		if(typeof page.params.slug !== 'undefined'){
