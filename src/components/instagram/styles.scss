@@ -3,4 +3,42 @@
 .instagram {
 	padding: 4.5rem 0;
 	margin-bottom: 6rem;
+
+	.iframe-wrap {
+		position: relative;
+		width: 100%;
+		padding-bottom: 50%;
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			border: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	// 992.98px and down
+	@media(max-width: $screen-md-down){
+		.iframe-wrap {
+			padding-bottom: calc(100% + 98px - 10px);
+		}
+	}
+	// 767.98px and down
+	@media(max-width: $screen-sm-down){
+		.iframe-wrap {
+			padding-bottom: calc(400% + 98px - 20px);
+		}
+	}
+	// 480px and down
+	@media(max-width: 480px){
+		.iframe-wrap {
+			padding-bottom: calc(400% + 125px - 20px);
+		}
+	}
+	// 768px and up
+	@media(min-width: $screen-lg-up){
+		.iframe-wrap {
+			padding-bottom: calc(50% + 98px - 10px);
+		}
+	}
 }
