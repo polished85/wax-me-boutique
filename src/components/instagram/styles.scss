@@ -41,13 +41,25 @@
 	// 480px and down
 	@media(max-width: 480px){
 		.iframe-wrap {
-			padding-bottom: calc(400% + 125px - 20px);
+			padding-bottom: calc(400% - 20px);
 			iframe {
-				top: 0;
-				height: 100%;
+				top: -106px;
+				height: calc(100% + 106px); // 66px + 40px
 			}
 		}
 	}
+
+	// 380px and down
+	@media(max-width: 380px){
+		.iframe-wrap {
+			padding-bottom: calc(400% - 20px);
+			iframe {
+				top: -125px;
+				height: calc(100% + 125px); // 66px + 40px
+			}
+		}
+	}
+
 	// 768px and up
 	@media(min-width: $screen-lg-up){
 		.iframe-wrap {
