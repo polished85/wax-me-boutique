@@ -7,10 +7,12 @@
 	export let pageName;
 	export let data;
 	let mobileActive = false
-	let mobileActiveDropdown = null
+	let mobileActiveDropdown = null 
+	let tempCleanPageName = pageName.substring(pageName.lastIndexOf("\/") + 1) 
+	let cleanPageName = ''
 </script>
 
-<div class="header {pageName}">
+<div class="header {cleanPageName}">
 	<div class="container-xl">
 
 		<div class="logo">
@@ -31,7 +33,7 @@
 		<nav>
 			<ul>
 				{#each data.links as link, i}
-					<li class:active='{pageName.toLowerCase() === link.name.toLowerCase()}' 
+					<li class:active='{cleanPageName.toLowerCase() === link.name.toLowerCase()}' 
 						on:click={() => { mobileActive = false }}>
 						<a rel='{link.external ? "external" : ""}' href='{link.url}'>{link.name}</a>
 					</li>
