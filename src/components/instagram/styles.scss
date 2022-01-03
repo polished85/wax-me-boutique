@@ -8,6 +8,7 @@
 		position: relative;
 		width: 100%;
 		padding-bottom: 50%;
+		overflow: hidden;
 		iframe {
 			position: absolute;
 			top: 0;
@@ -20,25 +21,41 @@
 	// 992.98px and down
 	@media(max-width: $screen-md-down){
 		.iframe-wrap {
-			padding-bottom: calc(100% + 98px - 10px);
+			padding-bottom: calc(100% - 10px);
+			iframe {
+				top: -98px;
+				height: calc(100% + 98px);
+			}
 		}
 	}
 	// 767.98px and down
 	@media(max-width: $screen-sm-down){
 		.iframe-wrap {
-			padding-bottom: calc(400% + 98px - 20px);
+			padding-bottom: calc(400% - 20px);
+			iframe {
+				top: -98px;
+				height: calc(100% + 98px);
+			}
 		}
 	}
 	// 480px and down
 	@media(max-width: 480px){
 		.iframe-wrap {
 			padding-bottom: calc(400% + 125px - 20px);
+			iframe {
+				top: 0;
+				height: 100%;
+			}
 		}
 	}
 	// 768px and up
 	@media(min-width: $screen-lg-up){
 		.iframe-wrap {
-			padding-bottom: calc(50% + 98px - 10px);
+			padding-bottom: calc(50% - 10px);
+			iframe {
+				top: -98px;
+				height: calc(100% + 98px);
+			}
 		}
 	}
 }
