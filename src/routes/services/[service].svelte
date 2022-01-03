@@ -1,7 +1,7 @@
 <script context="module">
 	// see https://kit.svelte.dev/docs#loading
-	export const load = async ({ page, fetch, session, stuff }) => {
-		const res = await fetch(`/data/services/${page.params.service}.json`);
+	export const load = async ({ url, params, session, fetch, stuff }) => {
+		const res = await fetch(`/data/services/${params.service}.json`);
 
 		if (res.ok) {
 			const data = await res.json();

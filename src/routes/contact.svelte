@@ -49,7 +49,7 @@
 
 <script context="module">
 	// see https://kit.svelte.dev/docs#loading
-	export const load = async ({ page, fetch, session, stuff }) => {
+	export const load = async ({ url, params, session, fetch, stuff }) => {
 		const res = await fetch('/data/contact.json');
 
 		if (res.ok) {

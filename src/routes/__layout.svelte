@@ -1,15 +1,14 @@
 <script context="module">
-	export const load = async ({ page, fetch, session, stuff }) => {
-		
+	export const load = async ({ url, params, session, fetch, stuff }) => {
 		// set active page
 		var pageName 
-		if(typeof page.params.slug !== 'undefined'){
-			pageName = page.params.slug
+		if(typeof params.slug !== 'undefined'){
+			pageName = params.slug
 		} else {
-			if(page.path === '/'){
+			if(url.pathname === '/'){
 				pageName = 'home'
 			} else {
-				pageName = page.path.substring(1)
+				pageName = url.pathname.substring(1)
 			}
 		}
 

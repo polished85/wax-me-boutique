@@ -1,6 +1,6 @@
 <script context="module">
 	let data
-	export async function load({ page, fetch, session, stuff }) {
+	export async function load({ url, params, session, fetch, stuff }) {
 		data = stuff.nav.links
 		return true
 	}
