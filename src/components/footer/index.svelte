@@ -1,15 +1,5 @@
 <style lang="scss" global>
 	@import "styles.scss";
-	.footer .btn-map {
-		display: inline-flex;
-		align-items: center;
-		cursor: pointer;
-	    padding: 0 4rem 0 2rem;
-	    height: 4.8rem;
-		svg {
-			margin-right: 1rem;
-		}
-	}
 </style>
 
 <script>

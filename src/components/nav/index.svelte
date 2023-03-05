@@ -1,15 +1,13 @@
 <style lang="scss" global>
-	@import "styles.scss";
+	@import "./styles.scss"
 </style>
 
 <script>
 	import { XIcon, MenuIcon } from 'svelte-feather-icons';
-	export let pageName;
 	export let data;
 	let mobileActive = false
 	let mobileActiveDropdown = null 
-	let tempCleanPageName = pageName.substring(pageName.lastIndexOf("\/") + 1) 
-	let cleanPageName = ''
+	let cleanPageName = 'home'
 </script>
 
 <div class="header {cleanPageName}">
@@ -38,7 +36,6 @@
 						<a rel='{link.external ? "external" : ""}' href='{link.url}'>{link.name}</a>
 					</li>
 				{/each}
-				<!-- <li><a rel=prefetch class:active='{pageName === "services"}' href='services'>services</a></li> -->
 			</ul>
 		</nav>
 	</div>
