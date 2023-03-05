@@ -1,8 +1,7 @@
 export const load = async ({ url, params, session, fetch, stuff }) => {
-	// set active page
 	var pageName 
-	if(typeof params.slug !== 'undefined'){
-		pageName = params.slug
+	if(typeof params.service !== 'undefined'){
+		pageName = params.service
 	} else {
 		if(url.pathname === '/'){
 			pageName = 'home'
@@ -16,7 +15,8 @@ export const load = async ({ url, params, session, fetch, stuff }) => {
 	if (res.ok) {
 		var data = await res.json();
 		return {
-			global: data
+			global: data,
+			pageName: pageName
 		}
 	}
 

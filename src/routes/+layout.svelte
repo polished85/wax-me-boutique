@@ -10,7 +10,7 @@
 
 </style>
 
-<Nav data="{data.global.nav}" />
+<Nav pageName={data.pageName} data="{data.global.nav}" />
 
 <main class="main">
 	<slot />

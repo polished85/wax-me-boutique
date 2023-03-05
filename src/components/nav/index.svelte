@@ -5,12 +5,12 @@
 <script>
 	import { XIcon, MenuIcon } from 'svelte-feather-icons';
 	export let data;
+	export let pageName;
 	let mobileActive = false
 	let mobileActiveDropdown = null 
-	let cleanPageName = 'home'
 </script>
 
-<div class="header {cleanPageName}">
+<div class="header {pageName}">
 	<div class="container-xl">
 
 		<div class="logo">
@@ -31,7 +31,7 @@
 		<nav>
 			<ul>
 				{#each data.links as link, i}
-					<li class:active='{cleanPageName.toLowerCase() === link.name.toLowerCase()}' 
+					<li class:active='{pageName.toLowerCase() === link.name.toLowerCase()}' 
 						on:click={() => { mobileActive = false }}>
 						<a rel='{link.external ? "external" : ""}' href='{link.url}'>{link.name}</a>
 					</li>
