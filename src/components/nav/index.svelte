@@ -13,10 +13,6 @@
 <div class="header {pageName}">
 	<div class="container-xl">
 
-		<div class="logo">
-			<a href="{data.logo.url}" title="{data.logo.title}" style="background-image: url({data.logo.src})"></a>
-		</div>
-
 		<button 
 			type="button"
 			class="btn-toggle-nav {mobileActive ? "is-active" : ""}" 
@@ -31,9 +27,16 @@
 		<nav>
 			<ul>
 				{#each data.links as link, i}
-					<li class:active='{pageName.toLowerCase() === link.name.toLowerCase()}' 
+					<li class="{link.type}" class:active='{pageName.toLowerCase() === link.name.toLowerCase()}' 
 						on:click={() => { mobileActive = false }}>
-						<a rel='{link.external ? "external" : ""}' href='{link.url}'>{link.name}</a>
+						<a rel='{link.external ? "external" : ""}' href='{link.url}'>
+							{#if link.type == 'logo'}
+								<span>{link.name}</span>
+								<img src="{data.logo.src}" alt="{data.logo.alt}" />
+							{:else}
+								{link.name}
+							{/if}
+						</a>
 					</li>
 				{/each}
 			</ul>

@@ -2,6 +2,7 @@
 	"nav": {
 		"logo": {
 			"src": "/img/logo-white.png",
+			"alt": "green and round round background with white flower",
 			"url": "/",
 			"title": "wax, skin, tan"
 		},
@@ -12,29 +13,52 @@
 				"external": false
 			},
 			{
-				"name": "Brows",
-				"url": "/services/brows",
-				"external": false
+				"name": "Services",
+				"url": "/services",
+				"external": false,
+				"dropdown": [
+					{
+						"name": "Brows",
+						"url": "/services/brows",
+						"external": false
+					},
+					{
+						"name": "Waxing",
+						"url": "/services/waxing",
+						"external": false
+					},
+					{
+						"name": "Facial Treatments",
+						"url": "/services/facial-treatments",
+						"external": false
+					},
+					{
+						"name": "Sunless Tan",
+						"url": "/services/sunless-tan",
+						"external": false
+					},
+					{
+						"name": "Blog",
+						"url": "https://waxmeboutique.wordpress.com",
+						"external": true
+					}
+				]
 			},
 			{
-				"name": "Waxing",
-				"url": "/services/waxing",
-				"external": false
+				"name": "Wax Me Boutique",
+				"url": "/",
+				"external": false,
+				"type": "logo"
 			},
 			{
-				"name": "Facial Treatments",
-				"url": "/services/facial-treatments",
-				"external": false
-			},
-			{
-				"name": "Sunless Tan",
-				"url": "/services/sunless-tan",
-				"external": false
-			},
-			{
-				"name": "Blog",
-				"url": "https://waxmeboutique.wordpress.com",
+				"name": "Gift Cards",
+				"url": "https://squareup.com/gift/9H0WFY4FD2899/order",
 				"external": true
+			},
+			{
+				"name": "Book Now",
+				"url": "/",
+				"external": false
 			}
 		]
 	},
