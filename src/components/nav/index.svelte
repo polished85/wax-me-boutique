@@ -29,14 +29,27 @@
 				{#each data.links as link, i}
 					<li class="{link.type}" class:active='{pageName.toLowerCase() === link.name.toLowerCase()}' 
 						on:click={() => { mobileActive = false }}>
-						<a rel='{link.external ? "external" : ""}' href='{link.url}'>
-							{#if link.type == 'logo'}
-								<span>{link.name}</span>
-								<img src="{data.logo.src}" alt="{data.logo.alt}" />
-							{:else}
-								{link.name}
-							{/if}
-						</a>
+						{#if link.type !== 'dropdown'}
+							<a rel='{link.external ? "external" : ""}' href='{link.url}'>
+								{#if link.type == 'logo'}
+									<span>{link.name}</span>
+									<img src="{data.logo.src}" alt="{data.logo.alt}" />
+								{:else}
+									{link.name}
+								{/if}
+							</a>
+						{:else}
+							<span>{link.name}</span>
+							<div class="dropdown-menu">
+								<ul>
+									{#each link.links as childLink, j}
+										<li>
+											<a rel='{childLink.external ? "external" : ""}' href='{childLink.url}'>{childLink.name}</a>
+										</li>
+									{/each}
+								</ul>
+							</div>
+						{/if}
 					</li>
 				{/each}
 			</ul>
