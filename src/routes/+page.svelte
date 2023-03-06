@@ -26,7 +26,16 @@
 <header class="hero">
 	<Image data="{heroImage}"></Image>
 </header>
-<Video></Video>
+
+<div class="intro">
+	<div class="container">
+		<h2>{data.intro.title}</h2>
+		{#each data.intro.text as text, i}
+			<p>{text}</p>
+		{/each}
+	</div>
+</div>
+
 <Reservation data="{data.reservation}"></Reservation>
 <OurTeam data={data.team}></OurTeam>
 <About data={data.about}></About>
