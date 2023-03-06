@@ -16,7 +16,8 @@
 				"name": "Services",
 				"url": "/services",
 				"external": false,
-				"dropdown": [
+				"type": "dropdown",
+				"links": [
 					{
 						"name": "Brows",
 						"url": "/services/brows",
@@ -70,38 +71,38 @@
 		"hours": [
 			{
 				"day": "Monday",
+				"start": "x",
+				"end": "x"
+			},
+			{
+				"day": "Tuesday",
 				"start": "10:00",
 				"end": "18:00"
 			},
 			{
-				"day": "Tuesday",
-				"start": "9:00",
-				"end": "19:00"
-			},
-			{
 				"day": "Wednesday",
-				"start": "9:00",
-				"end": "19:00"
+				"start": "10:00",
+				"end": "18:00"
 			},
 			{
 				"day": "Thursday",
-				"start": "9:00",
-				"end": "19:00"
+				"start": "10:00",
+				"end": "18:00"
 			},
 			{
 				"day": "Friday",
-				"start": "9:00",
-				"end": "19:00"
+				"start": "10:00",
+				"end": "18:00"
 			},
 			{
 				"day": "Saturday",
-				"start": "9:00",
-				"end": "14:00"
+				"start": "10:00",
+				"end": "15:00"
 			},
 			{
 				"day": "Sunday",
-				"start": "0",
-				"end": "0"
+				"start": "x",
+				"end": "x"
 			}
 		],
 		"phone": [

@@ -18,6 +18,36 @@
 			"path": "/img/facial-treatments.jpg"
 		}
 	},
+	"featured":{
+		"title": "OxyGeneo - 3-in-1 Super Facial",
+		"lead":"Scientifically proven oxygenation, reduce appearance of pores, renewed youthful glow, increased collagen, reduce brown spots, skin plumping & hydrating, reduce appearance of wrinkles.",
+		"items": [
+			{
+				"title": "STEP 1 OXFOLIATION",
+				"image": null,
+				"text": [
+					"Geneo OxyPods react with Geneo Primer Gel to gently exfoliate the skin and create a bubbly, CO2-rich environment on the skin’s surface. This in turn causes a surge of oxygenated blood & nutrients to be delivered to the more superficial layers of skin, leaving behind a bright, glowing complexion."
+				]
+			},
+			{
+				"title": "STEP 2 ULTRASOUND",
+				"image": null,
+				"text": [
+					"Ultrasound waves create micro-vibrations that instantly smooth the skin and increase the permeability of the skin’s protective layer, enabling better nutrient absorption."
+				]
+			},
+			{
+				"title": "STEP 3 MASSAGE",
+				"image": null,
+				"text": [
+					"A relaxing hands-free massage sculpts the face, delivering instant reduction of redness and puffiness while infusing Geneo’s active ingredients even deeper into the skin."
+				]
+			}
+		],
+		"text":[
+			"GENEO facials can be customized to fit your skincare needs with the power of the OxyPod. Geneo OxyPods are made with 100% natural ingredients like red algae, charcoal, & vitamin C, aiming to solve your skincare concerns. Each OxyPod is formulated with targeted ingredients, delivering natural sources of vitamins, minerals, and antioxidants to improve your skin’s overall health and appearance."
+		]
+	},
 	"main": {
 		"title": "Facial Treatments",
 		"sections": [
@@ -25,24 +55,29 @@
 				"title": "Facials",
 				"image": null,
 				"text": [
-					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Duis at consectetur lorem donec massa sapien faucibus et molestie. Tempor commodo ullamcorper a lacus vestibulum sed arcu. Risus at ultrices mi tempus imperdiet. Massa sed elementum tempus egestas sed. Sed odio morbi quis commodo odio aenean sed. Phasellus egestas tellus rutrum tellus. Vulputate ut pharetra sit amet. Convallis a cras semper auctor neque vitae tempus quam pellentesque. Vel orci porta non pulvinar neque laoreet suspendisse. In arcu cursus euismod quis viverra nibh cras pulvinar. Maecenas accumsan lacus vel facilisis. Urna porttitor rhoncus dolor purus non enim praesent elementum facilisis. Tristique risus nec feugiat in fermentum posuere urna. Vitae purus faucibus ornare suspendisse sed nisi lacus sed.",
-					"Fringilla urna porttitor rhoncus dolor purus non enim praesent elementum. Velit euismod in pellentesque massa placerat duis ultricies. Consectetur libero id faucibus nisl tincidunt eget. Quis enim lobortis scelerisque fermentum dui faucibus in. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Id porta nibh venenatis cras sed felis eget velit. Varius vel pharetra vel turpis nunc. Sed sed risus pretium quam vulputate. Cras sed felis eget velit aliquet. Amet venenatis urna cursus eget nunc scelerisque. Ut tellus elementum sagittis vitae. In cursus turpis massa tincidunt dui ut ornare. Enim facilisis gravida neque convallis a cras semper auctor neque."
+					"The Rezenerate™ Nano-Needling facial treatment using Nanotechnology to temporarily create micro-channels in the skin’s surface, allowing products and nutrients to be deeply penetrated to the dermal layer where collagen stimulation happens. It increases hydration by plumping the cells, minimizes fine lines and wrinkles, improves tone, texture and tightens the skin. The facial uses our proprietary customized and infused medical ingredients to target specific conditions like hyperpigmentation, oily skin, anti-aging, breakouts, dry skin, and more. The Nano-Needling Facial is non-invasive and causes no pain. It is a cosmetic facial, not a medical procedure. Numbing cream is not needed for the facial."
 				]
 			},
 			{
-				"title": "Corrective Peels",
+				"title": "LED Light therapy",
 				"image": null,
 				"text": [
-					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Duis at consectetur lorem donec massa sapien faucibus et molestie. Tempor commodo ullamcorper a lacus vestibulum sed arcu. Risus at ultrices mi tempus imperdiet. Massa sed elementum tempus egestas sed. Sed odio morbi quis commodo odio aenean sed. Phasellus egestas tellus rutrum tellus. Vulputate ut pharetra sit amet. Convallis a cras semper auctor neque vitae tempus quam pellentesque. Vel orci porta non pulvinar neque laoreet suspendisse. In arcu cursus euismod quis viverra nibh cras pulvinar. Maecenas accumsan lacus vel facilisis. Urna porttitor rhoncus dolor purus non enim praesent elementum facilisis. Tristique risus nec feugiat in fermentum posuere urna. Vitae purus faucibus ornare suspendisse sed nisi lacus sed.",
-					"Fringilla urna porttitor rhoncus dolor purus non enim praesent elementum. Velit euismod in pellentesque massa placerat duis ultricies. Consectetur libero id faucibus nisl tincidunt eget. Quis enim lobortis scelerisque fermentum dui faucibus in. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Id porta nibh venenatis cras sed felis eget velit. Varius vel pharetra vel turpis nunc. Sed sed risus pretium quam vulputate. Cras sed felis eget velit aliquet. Amet venenatis urna cursus eget nunc scelerisque. Ut tellus elementum sagittis vitae. In cursus turpis massa tincidunt dui ut ornare. Enim facilisis gravida neque convallis a cras semper auctor neque."
+					"Celluma light therapy mimics a natural photo biochemical reaction process to deliver safe, UV-free, low-level, light energy through an FDA cleared, high-intensity LED device. This light energy improves cellular health by accelerating the repair and replenishment of compromised tissue cells. It is anti-aging, proven to increase collagen and elastin, softening lines and repairing damaged tissue. Effective to treat and heal acne, as blue light diminishes bacteria and inflammation. Recommended for acne prone skin and mature skin."
 				]
 			},
 			{
-				"title": "Advanced Treatments",
+				"title": "Microcurrent",
 				"image": null,
 				"text": [
-					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Duis at consectetur lorem donec massa sapien faucibus et molestie. Tempor commodo ullamcorper a lacus vestibulum sed arcu. Risus at ultrices mi tempus imperdiet. Massa sed elementum tempus egestas sed. Sed odio morbi quis commodo odio aenean sed. Phasellus egestas tellus rutrum tellus. Vulputate ut pharetra sit amet. Convallis a cras semper auctor neque vitae tempus quam pellentesque. Vel orci porta non pulvinar neque laoreet suspendisse. In arcu cursus euismod quis viverra nibh cras pulvinar. Maecenas accumsan lacus vel facilisis. Urna porttitor rhoncus dolor purus non enim praesent elementum facilisis. Tristique risus nec feugiat in fermentum posuere urna. Vitae purus faucibus ornare suspendisse sed nisi lacus sed.",
-					"Fringilla urna porttitor rhoncus dolor purus non enim praesent elementum. Velit euismod in pellentesque massa placerat duis ultricies. Consectetur libero id faucibus nisl tincidunt eget. Quis enim lobortis scelerisque fermentum dui faucibus in. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Id porta nibh venenatis cras sed felis eget velit. Varius vel pharetra vel turpis nunc. Sed sed risus pretium quam vulputate. Cras sed felis eget velit aliquet. Amet venenatis urna cursus eget nunc scelerisque. Ut tellus elementum sagittis vitae. In cursus turpis massa tincidunt dui ut ornare. Enim facilisis gravida neque convallis a cras semper auctor neque."
+					"Microcurrent is a non-invasive technology that uses a low electrical current to re-educate muscles, giving your skin a more contoured and lifted effect. Microcurrent increases cellular energy (ATPs) which leads to healthy new cells and an increase of collagen and elastin synthesis. First designed for Bell's Palsy patients to retrain their muscles, it is currently used in treating sports injuries to accelerate the healing process due to the increase of collagen. It is widely used in the world of Esthetics for an instant non-surgical facelift, making it extremely popular among celebrities!"
+				]
+			},
+			{
+				"title": "Dermaplaning",
+				"image": null,
+				"text": [
+					"An anti-aging skincare treatment that provides an alternative to microdermabrasion and is a good choice for anyone who has facial hair or visible broken capillaries.",
+					"This is a highly effective manual exfoliation technique that removes surface debris with a sterile, surgical scalpel (dermaplaning blade). An aesthetician uses the scalpel while holding the skin taut, swiping the blade in gentle upward motions to exfoliate the skin’s surface, removing the top-most layer of dead skin. The added bonus is the removal of the fine, vellus hair (aka peach fuzz), which makes the skin feel smoother. It does not cause trauma to the skin."
 				]
 			}
 		]

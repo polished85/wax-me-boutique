@@ -2,7 +2,7 @@
 	"head": {
 		"layout": "services",
 		"title": "Waxing",
-		"description": "Vitae purus faucibus ornare suspendisse sed nisi lacus sed",
+		"description": "We specialize in a range of men&apos;s and women&apos;s waxing for body and face.",
 		"keywords": "waxing for women",
 		"author": "Natalia de la Motta",
 		"date": "7/15/2020"
@@ -22,19 +22,10 @@
 		"title": "Waxing",
 		"sections": [
 			{
-				"title": "For Her",
+				"title": "About Our Wax",
 				"image": null,
 				"text": [
-					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Duis at consectetur lorem donec massa sapien faucibus et molestie. Tempor commodo ullamcorper a lacus vestibulum sed arcu. Risus at ultrices mi tempus imperdiet. Massa sed elementum tempus egestas sed. Sed odio morbi quis commodo odio aenean sed. Phasellus egestas tellus rutrum tellus. Vulputate ut pharetra sit amet. Convallis a cras semper auctor neque vitae tempus quam pellentesque. Vel orci porta non pulvinar neque laoreet suspendisse. In arcu cursus euismod quis viverra nibh cras pulvinar. Maecenas accumsan lacus vel facilisis. Urna porttitor rhoncus dolor purus non enim praesent elementum facilisis. Tristique risus nec feugiat in fermentum posuere urna. Vitae purus faucibus ornare suspendisse sed nisi lacus sed.",
-					"Fringilla urna porttitor rhoncus dolor purus non enim praesent elementum. Velit euismod in pellentesque massa placerat duis ultricies. Consectetur libero id faucibus nisl tincidunt eget. Quis enim lobortis scelerisque fermentum dui faucibus in. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Id porta nibh venenatis cras sed felis eget velit. Varius vel pharetra vel turpis nunc. Sed sed risus pretium quam vulputate. Cras sed felis eget velit aliquet. Amet venenatis urna cursus eget nunc scelerisque. Ut tellus elementum sagittis vitae. In cursus turpis massa tincidunt dui ut ornare. Enim facilisis gravida neque convallis a cras semper auctor neque."
-				]
-			},
-			{
-				"title": "For Him",
-				"image": null,
-				"text": [
-					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Duis at consectetur lorem donec massa sapien faucibus et molestie. Tempor commodo ullamcorper a lacus vestibulum sed arcu. Risus at ultrices mi tempus imperdiet. Massa sed elementum tempus egestas sed. Sed odio morbi quis commodo odio aenean sed. Phasellus egestas tellus rutrum tellus. Vulputate ut pharetra sit amet. Convallis a cras semper auctor neque vitae tempus quam pellentesque. Vel orci porta non pulvinar neque laoreet suspendisse. In arcu cursus euismod quis viverra nibh cras pulvinar. Maecenas accumsan lacus vel facilisis. Urna porttitor rhoncus dolor purus non enim praesent elementum facilisis. Tristique risus nec feugiat in fermentum posuere urna. Vitae purus faucibus ornare suspendisse sed nisi lacus sed.",
-					"Fringilla urna porttitor rhoncus dolor purus non enim praesent elementum. Velit euismod in pellentesque massa placerat duis ultricies. Consectetur libero id faucibus nisl tincidunt eget. Quis enim lobortis scelerisque fermentum dui faucibus in. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Id porta nibh venenatis cras sed felis eget velit. Varius vel pharetra vel turpis nunc. Sed sed risus pretium quam vulputate. Cras sed felis eget velit aliquet. Amet venenatis urna cursus eget nunc scelerisque. Ut tellus elementum sagittis vitae. In cursus turpis massa tincidunt dui ut ornare. Enim facilisis gravida neque convallis a cras semper auctor neque."
+					"We specialize in a range of men&apos;s and women&apos;s waxing for body and face. Our pine-based, proprietary elastic-wax formula is created with pure, honest ingredients for optimal comfort even on the most sensitive skin. Applied at body temperature, it exfoliates and nourishes, while its flexible elasticity adheres directly to the hair, leaving only smooth skin behind. It is made in Australia, gluten-free, all-natural, and vegan. Three different wax formulas are available, and can be used alone or in combination during your service based on your individual skin and hair type."
 				]
 			}
 		]

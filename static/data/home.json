@@ -1,4 +1,10 @@
 {
+	"intro": {
+		"title": "Welcome to Wax Me Skincare Boutique",
+		"text": [
+			"We are the experts in all your skincare needs offering a wide variety of professional services, from high performance facials, all things brows, waxing and sunless tanning. We are committed to providing our clients with professional waxing and facial treatments while incorporating high-tech modalities with the most advanced ingredients. We deliver superior results in a relaxing and private atmosphere."
+		]
+	},
 	"reservation": {
 		"title": "Reservation",
 		"text": [
@@ -14,10 +20,14 @@
 		"title": "Esthetician/Owner",
 		"people": [
 			{
-				"image": "/img/natalia.jpg",
+				"image": "/img/natalia-felipe.jpg",
 				"name": "Natalia De La Motta",
 				"role": "Esthetician/Owner",
-				"text": "Born and raised in South America, Natalia has always had a passion for beauty, skin care, and waxing. After working for several spas and waxing salons throughout San Diego, she is now the head of her own salon."
+				"text": [
+					"Welcome beauties! I’m Natalia, your licensed esthetician with 14+ years of experience in the beautiful La Jolla, CA. I was born and raised in Lima Peru. My passion for skincare started at a young age when my mother showed me how to care for my skin by going to the spa and receive monthly facials.",
+					"Being an esthetician is more rewarding than I could ever imagined. I’ve worked incredibly hard to get to where I am today and I am so grateful to be working my dream job and helping my clients look and feel their best.",
+					"My main goal is to educate my clients about the importance of maintaining a regular skincare regime in combination with a monthly facial. I am constantly growing my knowledge and bringing in new technology because I love to see clients coming back and seeing results!"
+				]
 			}
 		]
 	},

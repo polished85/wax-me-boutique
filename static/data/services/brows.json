@@ -2,7 +2,7 @@
 	"head": {
 		"layout": "services",
 		"title": "Brows",
-		"description": "Vitae purus faucibus ornare suspendisse sed nisi lacus sed",
+		"description": "Keratin Brow Lamination",
 		"keywords": "brows, brow bar",
 		"author": "Natalia de la Motta",
 		"date": "7/15/2020"
@@ -22,19 +22,32 @@
 		"title": "Brows",
 		"sections": [
 			{
-				"title": "Brow Bar",
+				"title": "Keratin Brow Lamination",
 				"image": null,
 				"text": [
-					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Duis at consectetur lorem donec massa sapien faucibus et molestie. Tempor commodo ullamcorper a lacus vestibulum sed arcu. Risus at ultrices mi tempus imperdiet. Massa sed elementum tempus egestas sed. Sed odio morbi quis commodo odio aenean sed. Phasellus egestas tellus rutrum tellus. Vulputate ut pharetra sit amet. Convallis a cras semper auctor neque vitae tempus quam pellentesque. Vel orci porta non pulvinar neque laoreet suspendisse. In arcu cursus euismod quis viverra nibh cras pulvinar. Maecenas accumsan lacus vel facilisis. Urna porttitor rhoncus dolor purus non enim praesent elementum facilisis. Tristique risus nec feugiat in fermentum posuere urna. Vitae purus faucibus ornare suspendisse sed nisi lacus sed.",
-					"Fringilla urna porttitor rhoncus dolor purus non enim praesent elementum. Velit euismod in pellentesque massa placerat duis ultricies. Consectetur libero id faucibus nisl tincidunt eget. Quis enim lobortis scelerisque fermentum dui faucibus in. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Id porta nibh venenatis cras sed felis eget velit. Varius vel pharetra vel turpis nunc. Sed sed risus pretium quam vulputate. Cras sed felis eget velit aliquet. Amet venenatis urna cursus eget nunc scelerisque. Ut tellus elementum sagittis vitae. In cursus turpis massa tincidunt dui ut ornare. Enim facilisis gravida neque convallis a cras semper auctor neque."
+					"Brow lamination is a relaxer that tames unruly and sparse brow hairs to lay where they should, creating a beautiful face-framing shape. It’s less expensive, less invasive, and a temporary alternative to microblading and ombre.",
+					"<strong>What to know:</strong> This treatment will leave you with fluffy, custom-shaped brows. Do not wet brows for 24 hours. Do not exfoliate or use retinol, Vitamin A, AHAs, BHAs, steroid creams or skin thinning treatments around the eye/brow area for at least 48 hours post-treatment. A styling and nourishing product like Elleplex Advanced Aftercare will maintain your new look - ask your esthetician if you don’t have one at home."
 				]
 			},
 			{
-				"title": "Microblading",
+				"title": "Signature Brow Makeover",
 				"image": null,
 				"text": [
-					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Duis at consectetur lorem donec massa sapien faucibus et molestie. Tempor commodo ullamcorper a lacus vestibulum sed arcu. Risus at ultrices mi tempus imperdiet. Massa sed elementum tempus egestas sed. Sed odio morbi quis commodo odio aenean sed. Phasellus egestas tellus rutrum tellus. Vulputate ut pharetra sit amet. Convallis a cras semper auctor neque vitae tempus quam pellentesque. Vel orci porta non pulvinar neque laoreet suspendisse. In arcu cursus euismod quis viverra nibh cras pulvinar. Maecenas accumsan lacus vel facilisis. Urna porttitor rhoncus dolor purus non enim praesent elementum facilisis. Tristique risus nec feugiat in fermentum posuere urna. Vitae purus faucibus ornare suspendisse sed nisi lacus sed.",
-					"Fringilla urna porttitor rhoncus dolor purus non enim praesent elementum. Velit euismod in pellentesque massa placerat duis ultricies. Consectetur libero id faucibus nisl tincidunt eget. Quis enim lobortis scelerisque fermentum dui faucibus in. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Id porta nibh venenatis cras sed felis eget velit. Varius vel pharetra vel turpis nunc. Sed sed risus pretium quam vulputate. Cras sed felis eget velit aliquet. Amet venenatis urna cursus eget nunc scelerisque. Ut tellus elementum sagittis vitae. In cursus turpis massa tincidunt dui ut ornare. Enim facilisis gravida neque convallis a cras semper auctor neque."
+					"Get those brows that wow! Shaping, tint, trim, and tweeze. You can flaunt natural, full-looking brows that create a polished & put-together look on every face! Ideal for people with light and fair colored eyebrows. Need a bolder everyday brow but looking to skip the long tedious task of filling them in on the daily? Tinting may be the perfect fit for you."
+				]
+			},
+			{
+				"title": "Brow Shaping",
+				"image": null,
+				"text": [
+					"Recommended for first time clients. Includes brow shaping (wax, trim, tweeze, shape & fill). We will finish off your appointment by applying highlighter/concealer over your skin to eliminate the majority of any redness from the waxing. Interested in filling in your brows for a more polished look? Let us know, and we will take the time to go over the best products you can use for your brows."
+				]
+			},
+			{
+				"title": "Teen Brows",
+				"image": null,
+				"text": [
+					"Start them while they're young. Our waxing techniques are gentle on young skin and your teen will leave with full, natural & clean looking brows. For ages 16 and under. Visit us for some teen brow love (wax, trim, tweeze & shape). Lip wax & tint can be added on at the time of appointment (added cost)."
 				]
 			}
 		]
