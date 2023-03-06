@@ -6,9 +6,6 @@
 	padding: 0;
 	overflow: hidden;
 	margin-bottom: 6rem;
-	.content {
-		text-align: center;
-	}
 	h4 {
 		color: $theme_dark_green;
 		font-style: italic;
@@ -24,6 +21,13 @@
 	@media(min-width: $screen-md-up){
 		.row {
 			justify-content: center;
+		}
+	}
+	@media(min-width: $screen-xl-up){
+		.content {
+			h3 {
+				text-align: left;
+			}
 		}
 	}
 }
