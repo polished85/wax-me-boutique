@@ -1,4 +1,19 @@
 {
+	"hero": {
+		"title": "Welcome to Wax Me Skincare Boutique",
+		"overlay": 0.6,
+		"image": {
+			"ar": "16-9",
+			"fit": "cover",
+			"width": 1920,
+			"height": 1080,
+			"path": "/img/hero.jpg"
+		},
+		"cta": { 
+			"text": "Book an appointment",
+			"url":"https://www.vagaro.com/Users/BusinessWidget.aspx?BusinessID=48649&IsPopup=0&TabsIncluded=1|99|100&b_themeID=&w_type=2&widgetversion=3&isShowMobileApp=False&tabatlaunch=3"
+		}
+	},
 	"intro": {
 		"title": "Welcome to Wax Me Skincare Boutique",
 		"text": [

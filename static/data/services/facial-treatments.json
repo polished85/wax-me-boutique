@@ -10,6 +10,8 @@
 	"hero" :{
 		"theme": "light",
 		"color": "blue",
+		"title": "Facial Treatments",
+		"overlay": 0.6,
 		"image": {
 			"ar": "16-7",
 			"fit": "cover",
