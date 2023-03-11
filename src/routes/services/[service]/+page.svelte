@@ -1,5 +1,5 @@
 <script>
-	import Image from '$lib/image/index.svelte';
+	import Hero from '$lib/hero/index.svelte';
 	import Reservation from '$lib/reservation/index.svelte';
 	export let data;
 </script>
@@ -42,9 +42,7 @@
 	<meta name="author" content="{data.head.author}">
 </svelte:head>
 
-<header class="hero bg-{data.hero.color} theme-{data.hero.theme}">
-	<Image data={data.hero.image}></Image>
-</header>
+<Hero data={data.hero}/>
 
 <main class="main">
 	<div class="container">
@@ -59,4 +57,5 @@
 		{/each}
 	</div>
 </main>
+
 <Reservation></Reservation>

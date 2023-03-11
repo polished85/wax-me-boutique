@@ -5,38 +5,29 @@
 </style>
 
 <script>
-	import Image from '$lib/image/index.svelte';
-	import Video from '$lib/video/index.svelte';
+	import Hero from '$lib/hero/index.svelte';
 	import Reservation from '$lib/reservation/index.svelte';
-	import About from '$lib/about/index.svelte';
 	import OurTeam from '$lib/team/index.svelte';
 	import Instagram from '$lib/instagram/index.svelte';
 	
-	export let data;
-	let heroImage = {
-		ar: '16-9',
-		fit: 'cover',
-		width: 1920,
-		height: 1080,
-		path: '/img/hero.jpg'
-	}
-	
+	export let data;	
 </script>
 
-<header class="hero">
-	<Image data="{heroImage}"></Image>
-</header>
+<Hero data={data.hero}/>
 
-<div class="intro">
-	<div class="container">
-		<h2>{data.intro.title}</h2>
-		{#each data.intro.text as text, i}
-			<p>{text}</p>
-		{/each}
+<main class="main">
+	<div class="intro">
+		<div class="container">
+			<h2>{data.intro.title}</h2>
+			{#each data.intro.text as text, i}
+				<p>{text}</p>
+			{/each}
+		</div>
 	</div>
-</div>
 
-<Reservation data="{data.reservation}"></Reservation>
-<OurTeam data={data.team}></OurTeam>
-<About data={data.about}></About>
-<Instagram />
+
+	<OurTeam data={data.team}></OurTeam>
+	<!-- <About data={data.about}></About> -->
+	<Instagram />
+	<Reservation data="{data.reservation}"></Reservation>
+</main>
