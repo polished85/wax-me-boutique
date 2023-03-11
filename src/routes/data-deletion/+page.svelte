@@ -12,7 +12,7 @@
 </svelte:head>
 
 
-<section class="data-deletion-page">
+<main class="data-deletion-page">
 	<div class="container">
 		<h1>Data Deletion</h1>
  		<h2>How to delete you data</h2>
@@ -23,4 +23,4 @@
 		 
 	</div>
 
-</section>
+</main>

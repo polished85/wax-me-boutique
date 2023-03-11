@@ -32,13 +32,15 @@
 	<title>Services</title>
 </svelte:head>
 
-<div class="container">
-	<h1>Services</h1>
-	<ul>
-		{#each services as service}
-			<li><a rel='{service.external ? "external" : ""}' href='{service.url}'>{service.name}</a></li>
-		{/each}
-	</ul>
-</div>
+<main class="main">
+	<div class="container">
+		<h1>Services</h1>
+		<ul>
+			{#each services as service}
+				<li><a rel='{service.external ? "external" : ""}' href='{service.url}'>{service.name}</a></li>
+			{/each}
+		</ul>
+	</div>
+</main>
 
 <Reservation></Reservation>

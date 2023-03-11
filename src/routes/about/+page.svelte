@@ -13,7 +13,7 @@
 	export let data;
 </script>
 
-<section class="about-page">
+<main class="about-page">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-8 col-lg-9">
@@ -29,4 +29,4 @@
 		{/each}
 	</div>
 	<Reservation></Reservation>
-</section>
+</main>

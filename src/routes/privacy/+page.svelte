@@ -12,7 +12,7 @@
 </svelte:head>
 
 
-<section class="privacy-page">
+<main class="privacy-page">
 	<div class="container">
 		<h1>Privacy Policy</h1>
 		<h3>Last updated: <time>10/30/2021</time></h3>
@@ -88,4 +88,4 @@
 		<p>If you have any questions about this Privacy Policy, please contact us.</p>
 	</div>
 
-</section>
+</main>

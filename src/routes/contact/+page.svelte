@@ -51,7 +51,7 @@
 	export let data;
 </script>
 
-<section class="contact-page">
+<main class="contact-page">
 	<div class="container">
 		<h1>{data.title}</h1>
 		<div class="row">
@@ -77,4 +77,4 @@
 		</div>
 	</div>
 	<Reservation></Reservation>
-</section>
+</main>
