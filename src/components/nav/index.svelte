@@ -14,10 +14,11 @@
 	let elNode 
 	let sticky
 	let navClass = ''
-	let mdBreakpoint = window.matchMedia('(min-width: 768px)') 
+	let mdBreakpoint = false
 
 	onMount(async () => {
-		sticky = elNode.offsetTop
+		sticky = elNode.offsetTop 
+		mdBreakpoint = window.matchMedia('(min-width: 768px)') 
 	});
 
 	function toggleSticky() {
