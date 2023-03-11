@@ -71,8 +71,8 @@
 		"hours": [
 			{
 				"day": "Monday",
-				"start": "x",
-				"end": "x"
+				"start": "closed",
+				"end": ""
 			},
 			{
 				"day": "Tuesday",
@@ -101,8 +101,8 @@
 			},
 			{
 				"day": "Sunday",
-				"start": "x",
-				"end": "x"
+				"start": "closed",
+				"end": ""
 			}
 		],
 		"phone": [
