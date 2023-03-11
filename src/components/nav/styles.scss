@@ -1,10 +1,13 @@
 @import "../../style/variables.scss";
 
 .header {
-	position: relative;
-	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
 	.logo {
-		flex-basis: 200px;
+		flex-basis: 100px;
 		flex-grow: 0;
 		flex-shrink: 0;
 		a {
@@ -15,7 +18,7 @@
 			background-position: center;
 			justify-content: center;
 			align-content: center;
-			width: 200px;
+			width: 100px;
 			padding-bottom: 100%;
 			position: relative;
 			span {
@@ -40,6 +43,8 @@
 	}
 
 	nav {
+		opacity: relative;
+		z-index: 1;
 		font-family: $font-title;
 		> ul {
 			margin: 0;
@@ -64,31 +69,27 @@
     		}
 		}
 	}
-	
-	&.home {
-		// .logo {
-		// 	width: 100%;
-		// 	text-align: center;
-		// 	a {
-		// 		height: 20rem;
-		// 		width: 20rem;
-		// 	}
-		// }
-	}
-	&:not(.home){
-		> div {
-			display: flex;
-			align-items: center;
+	&.sticky {
+		position: fixed;
+		&:before {
+			opacity: 1;
 		}
-		// .logo {
-		// 	a {
-		// 		width: 10rem;
-		// 		height: 10rem;
-		// 	}
-		// }
 	}
 
-	@media(max-width: 767px){
+	@media(max-width: $screen-sm-down){
+		.mobile-logo {
+			position: absolute;
+			top: 15px;
+			left: 50%;
+			margin-left: -50px;
+			background-color: #7f8c26;
+			width: 100px;
+			height: 100px;
+			border-radius: 100px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
 		.overlay-bg {
 			position: fixed;
 			top: 0;
@@ -152,13 +153,21 @@
 		    					}
 								&.logo {
 									order: 0;
-									width: 200px;
+									width: 100px;
 									align-self: center;
 									> a {
 										padding-top: 0;
 									}
 								}
 		    				}
+		    			}
+		    		}
+		    		&.logo {
+		    			order: -1;
+		    			max-width: 100px;
+		    			padding: 15px 0;
+		    			> a {
+		    				padding: 0 0 100%;
 		    			}
 		    		}
 		    		&:last-child {
@@ -174,17 +183,17 @@
 			justify-content: center;
 			align-items: center;
 			position: absolute;
-			top: 0;
-			right: 0;
+			top: 15px;
+			right: 15px;
 			width: 40px;
 			height: 40px;
-			border-radius: 40px;
 			padding: 3px;
 			background: none;
 			z-index: 1;
-			border: 2px solid #fff;
 			cursor: pointer;
-			color: #000;
+			color: #fff;
+			border: 0;
+
 			&:hover,
 			&:focus {
 				outline: 0;
@@ -203,28 +212,27 @@
 		}
 	}
 
-	@media(min-width: 768px){
+	@media(min-width: $screen-md-up){
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 0;
+			opacity: 0;
+			background-color: #fff;
+			transition: opacity .25s;
+		}
+		.mobile-logo {
+			display: none;
+		}
 		.overlay-bg {
 			display: none;
 		}
-		&.home {
-			.logo {
-				padding:0;
-			}
-			nav {
-				margin-left: 0;
-			}
-		}
-		&:not(.home){
-			> .container {
-				display: flex;
-				align-items: center;
-			}
-		}
 		nav {
-			background-color: rgba(255, 255, 255, 0.5);
-	    
-	    flex-grow: 1;
+			flex-grow: 1;
 			margin-left: 2rem;
 	    > ul {
 	    	
@@ -239,22 +247,22 @@
 		    		font-size: 1.4rem;
 		    		display: inline-block;
 		    		position: relative;
-		    		color: $theme_main;
+		    		color: rgba(255,255,255,.75);
 		    		text-align: center;
 		    		padding: 0;
 		    		text-decoration: none;
 		    		text-transform: uppercase;
 		    		&::after {
-							position: absolute;
-							left: 50%;
-							transform: translateX(-50%);
-							content: '';
-							width: 0;
-							height: 1px;
-							background-color: $theme_main;
-							display: block;
-							bottom: -1px;
-							transition: width .25s ease-in-out;
+						position: absolute;
+						left: 50%;
+						transform: translateX(-50%);
+						content: '';
+						width: 0;
+						height: 1px;
+						background-color: #fff;
+						display: block;
+						bottom: -1px;
+						transition: width .25s ease-in-out;
 		    		}
 		    	}
 
@@ -318,13 +326,32 @@
 			}
 
 		}
+		&.sticky {
+			box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.1);
+			&:before {
+				opacity: 1;
+			}
+			nav {
+				> ul {
+					> li {
+						> a,
+						> span {
+							color: #000;
+							&::after {
+								background-color: $theme_main;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 
-	@media(min-width: 992px){
+	@media(min-width: $screen-lg-up){
 
 	}
 
-	@media(min-width: 1200px){
-		position:relative;
+	@media(min-width: $screen-xl-up){
+		
 	}
 }

@@ -3,16 +3,39 @@
 </style>
 
 <script>
+	import { onMount } from 'svelte';
 	import { XIcon, MenuIcon } from 'svelte-feather-icons';
+	import Image from '$lib/image/index.svelte';
+
 	export let data;
 	export let pageName;
 	let mobileActive = false
 	let mobileActiveDropdown = null 
+	let elNode 
+	let sticky
+	let navClass = ''
+	let mdBreakpoint = window.matchMedia('(min-width: 768px)') 
+
+	onMount(async () => {
+		sticky = elNode.offsetTop
+	});
+
+	function toggleSticky() {
+	  if (mdBreakpoint.matches && window.pageYOffset > sticky) {
+	    navClass = 'sticky'
+	  } else {
+	    navClass = ''
+	  }
+	} 
+
 </script>
 
-<div class="header {pageName}">
+<svelte:window on:scroll={toggleSticky}/>
+
+<div class="header {pageName} {navClass}" bind:this={elNode}>
 	<div class="container-xl">
 
+		<div class="mobile-logo" style="background-image: url({data.logo.src});"></div>
 		<button 
 			type="button"
 			class="btn-toggle-nav {mobileActive ? "is-active" : ""}" 
