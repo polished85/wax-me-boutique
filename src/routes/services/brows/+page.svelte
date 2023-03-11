@@ -50,10 +50,10 @@
 		{#each data.main.sections as section, i}
 			<div class="section">
 				<div class="row">
-					<div class="col-12 col-xl-4">
+					<div class="col-12 col-md-4">
 						<h2 class="title">{section.title}</h2>
 					</div>
-					<div class="col-12 col-xl-8">
+					<div class="col-12 col-md-8">
 						{#each section.text as text, i}
 							<p class="text">{@html text}</p>
 						{/each}
