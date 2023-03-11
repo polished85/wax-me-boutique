@@ -26,3 +26,5 @@ export const load = async ({ url, params, session, fetch, stuff }) => {
 		error: new Error(message)
 	};
 };
+
+export const prerender = true;
