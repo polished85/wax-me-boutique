@@ -56,9 +56,6 @@
 	    				text-decoration: none;
 	    			}
 	    		}
-	    		> span {
-	    			cursor: pointer;
-	    		}
 	    		.dropdown-menu {
 	    			ul {
 		    			margin: 0;
@@ -130,37 +127,13 @@
 			    		text-transform: uppercase;
 			    		padding: 2rem 0;
 			    		border-bottom: 1px solid #444;
-			    		&:hover,
+		    		}
+		    		> a {
+		    			&:hover,
 			    		&:active,
 			    		&:focus {
 			    			color: #84C340;
 			    		}
-		    		}
-		    		.dropdown-menu {
-		    			height: 0;
-		    			overflow: hidden;
-		    			transition: height .25s ease-in-out;
-		    			> ul {
-		    				padding-top: 2rem;
-		    				> li {
-		    					padding-left: 2rem;
-		    					> a {
-		    						display: inline-block;
-		    						width: 100%;
-		    						padding: 1.5rem 0;
-		    						color: #fff;
-		    						text-decoration: none;
-		    					}
-								&.logo {
-									order: 0;
-									width: 100px;
-									align-self: center;
-									> a {
-										padding-top: 0;
-									}
-								}
-		    				}
-		    			}
 		    		}
 		    		&.logo {
 		    			order: -1;
@@ -174,6 +147,42 @@
 		    			> a {
 		    				border-bottom: 0;
 		    			}
+		    		}
+		    		&.dropdown {
+		    			> span {
+		    				border-bottom: 0;
+		    			}
+		    			.dropdown-menu {
+			    			// height: 0;
+			    			overflow: hidden;
+			    			transition: height .25s ease-in-out;
+			    			> ul {
+			    				padding-bottom: 2rem;
+			    				> li {
+			    					padding-left: 2rem;
+			    					> a {
+			    						display: inline-block;
+			    						width: 100%;
+			    						padding: 1.5rem 0;
+			    						color: #fff;
+			    						text-decoration: none;
+			    						&:hover,
+							    		&:active,
+							    		&:focus {
+							    			color: #84C340;
+							    		}
+			    					}
+									&.logo {
+										order: 0;
+										width: 100px;
+										align-self: center;
+										> a {
+											padding-top: 0;
+										}
+									}
+			    				}
+			    			}
+			    		}
 		    		}
 		    	}
 		    }
@@ -265,6 +274,9 @@
 						transition: width .25s ease-in-out;
 		    		}
 		    	}
+		    	> span {
+	    			cursor: pointer;
+	    		}
 
 		    	.dropdown-menu {
 		    		position: absolute;
