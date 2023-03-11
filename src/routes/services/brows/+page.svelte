@@ -49,16 +49,16 @@
 		<h1>{data.main.title}</h1>
 		{#each data.main.sections as section, i}
 			<div class="section">
-				{#each section.text as text, i}
-					<div class="row">
-						<div class="col-12 col-xl-4">
-							<h2 class="title">{section.title}</h2>
-						</div>
-						<div class="col-12 col-xl-8">
-							<p class="text">{@html text}</p>
-						</div>
+				<div class="row">
+					<div class="col-12 col-xl-4">
+						<h2 class="title">{section.title}</h2>
 					</div>
-				{/each}
+					<div class="col-12 col-xl-8">
+						{#each section.text as text, i}
+							<p class="text">{@html text}</p>
+						{/each}
+					</div>
+				</div>
 			</div>
 		{/each}
 	</div>
