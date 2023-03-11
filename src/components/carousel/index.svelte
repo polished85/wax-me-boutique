@@ -1,5 +1,5 @@
 <style lang="scss" global>
-	@import "styles.scss";
+	@import "./styles.scss";
 
 	button :global(.control) {
 

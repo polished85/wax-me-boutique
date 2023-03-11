@@ -1,7 +1,7 @@
 <!-- https://github.com/beyonk-adventures/svelte-carousel -->
 <!-- https://vue-feather-icons.egoist.sh/ -->
 <style lang="scss" global>
-	@import "styles.scss";
+	@import "./styles.scss";
 
 	button :global(.control) {
 
