@@ -19,10 +19,10 @@
 
 	
 
-	@media(max-width: $screen-lg-down){
+	@media(max-width: $screen-sm-down){
 
 	}
-	@media(min-width: $screen-xl-up){
+	@media(min-width: $screen-md-up){
 		h2.title {
 			text-align: right;
 			&:after {
