@@ -12,7 +12,7 @@
 			fit: "cover",
 			width: 1920,
 			height: 1080,
-			path: "/img/hero.jpg"
+			path: "/img/salon.jpg"
 		},
 		cta: { 
 			text: "Book an appointment",
