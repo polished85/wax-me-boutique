@@ -9,29 +9,26 @@
 	h1 {
 		margin-bottom: 6rem;
 	}
-	.hero {
-		.row {
-			align-items: center;
-		}
-		p {
-			font-size: 25px;
-		}
-	}
 	.main {
 		padding: 6rem 0;
 	}
 	.section {
-		margin-bottom: 6rem;;
-	}
-	.hero {
-
+		margin-bottom: 6rem;
 	}
 
-	@media(max-width: $screen-md-down){
+	@media(max-width: $screen-sm-down){
 
 	}
-	@media(min-width: $screen-lg-up){
-
+	@media(min-width: $screen-md-up){
+		h2.title {
+			text-align: right;
+			&:after {
+				margin-right: 0;
+			}
+		}
+		.text {
+			padding-left: 2rem;
+		}
 	}
 </style>
 
@@ -49,13 +46,19 @@
 		<h1>{data.main.title}</h1>
 		{#each data.main.sections as section, i}
 			<div class="section">
-				<h2>{section.title}</h2>
-				{#each section.text as text, i}
-					<p>{text}</p>
-				{/each}
+				<div class="row">
+					<div class="col-12 col-md-4">
+						<h2 class="title">{section.title}</h2>
+					</div>
+					<div class="col-12 col-md-8">
+						{#each section.text as text, i}
+							<p class="text">{@html text}</p>
+						{/each}
+					</div>
+				</div>
 			</div>
 		{/each}
 	</div>
 </main>
 
-<Reservation></Reservation>
+<Reservation data="{data.global.reservation}" />
