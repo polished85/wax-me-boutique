@@ -142,5 +142,16 @@
 				"url":"https://www.vagaro.com/Users/BusinessWidget.aspx?BusinessID=48649&IsPopup=0&TabsIncluded=1|99|100&b_themeID=&w_type=2&widgetversion=3&isShowMobileApp=False&tabatlaunch=3"
 			}
 		}
+	},
+	"reservation": {
+		"title": "Reservation",
+		"text": [
+			"Wax Me Boutique is La Jolla&rsquo;s 5 star waxing and skincare boutique. We are conveniently located in the heart of La Jolla Village, inside Crosby Center. Our hair removal and skincare services are only available through licensed estheticians that have been trained and certified. At Wax Me Boutique, the health and beauty of your skin is of the utmost importance, we carefully select the highest quality all-natural wax and skincare products in the spa industry.",
+			"Our unique hair removal technique for men and women is what sets us apart from the rest, including brow design, Facials, corrective peels and spray tanning. Everyone who visits the boutique will feel welcome and comfortable, in a clean and relaxing environment."
+		],
+		"cta": { 
+			"text": "Book an appointment",
+			"url":"https://www.vagaro.com/Users/BusinessWidget.aspx?BusinessID=48649&IsPopup=0&TabsIncluded=1|99|100&b_themeID=&w_type=2&widgetversion=3&isShowMobileApp=False&tabatlaunch=3"
+		}
 	}
 }
