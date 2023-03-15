@@ -18,17 +18,13 @@
 		"title": "Welcome to Wax Me Skincare Boutique",
 		"text": [
 			"We are the experts in all your skincare needs offering a wide variety of professional services, from high performance facials, all things brows, waxing and sunless tanning. We are committed to providing our clients with professional waxing and facial treatments while incorporating high-tech modalities with the most advanced ingredients. We deliver superior results in a relaxing and private atmosphere."
-		]
-	},
-	"reservation": {
-		"title": "Reservation",
-		"text": [
-			"Wax Me Boutique is La Jolla&rsquo;s 5 star waxing and skincare boutique. We are conveniently located in the heart of La Jolla Village, inside Crosby Center. Our hair removal and skincare services are only available through licensed estheticians that have been trained and certified. At Wax Me Boutique, the health and beauty of your skin is of the utmost importance, we carefully select the highest quality all-natural wax and skincare products in the spa industry.",
-			"Our unique hair removal technique for men and women is what sets us apart from the rest, including brow design, Facials, corrective peels and spray tanning. Everyone who visits the boutique will feel welcome and comfortable, in a clean and relaxing environment."
 		],
-		"cta": { 
-			"text": "Book an appointment",
-			"url":""
+		"image": {
+			"ar": "16-9",
+			"fit": "cover",
+			"width": 1920,
+			"height": 1080,
+			"path": "/img/salon.jpg"
 		}
 	},
 	"team": {
@@ -44,13 +40,6 @@
 					"My main goal is to educate my clients about the importance of maintaining a regular skincare regime in combination with a monthly facial. I am constantly growing my knowledge and bringing in new technology because I love to see clients coming back and seeing results!"
 				]
 			}
-		]
-	},
-	"about": {
-		"title": "About Us",
-		"image": "/img/salon.jpg",
-		"text": [
-			"After receiving her esthetics license in 2008, Natalia has found that waxing is the part of skin care that she is most in love with. &ldquo;I love waxing because it is the fast paced, energetic, and social part of skin care. It brings immediate confidence to my clients and it&rsquo;s gratifying to be such a positive contribution to their happiness.&rdquo; Natalia has earned a glowing reputation for her painless and quick Brazilian waxes. Her passion for waxing grows from the wonderful relationships she has built with her clients, making them feel confident and sexy in their skin. &ldquo;I want every client to feel that they had the best waxing experience with someone they know and trust. I want every client who walks through my doors to feel like they found &lsquo;their girl.&rsquo;&rdquo; After working for several spas and waxing salons throughout San Diego, she is now the head of her own salon. Along with offering superior customer service, Natalia is committed to staying current with the industry's latest techniques and products, which she then brings back to her devoted clientele. When Natalia isn't waxing away at the salon, she spends time with her husband, her two beautiful children, and her Maltese dog. Natalia loves living an active, healthy lifestyle; she enjoys hot yoga, running, and cooking!"
 		]
 	}
 }
