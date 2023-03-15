@@ -6,12 +6,6 @@
 	export let data;
 </script>
 
-<style lang="scss" global>
-
-</style>
-
 <Nav pageName={data.pageName} data="{data.global.nav}" />
-
 <slot />
-
 <Footer data={data.global.footer} />
