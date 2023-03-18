@@ -17,13 +17,18 @@
 	}
 </script>
 
+
 <footer class="footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-6 col-lg-3">
 				<div class="content">
 					<h3>Info</h3>
-					<p>{data.email} <br/>{data.phone.join(' / ')}</p>
+					<p>
+						<a href="{data.faq.url}">{data.faq.text}</a><br/>
+						<a href="{data.policies.url}">{data.policies.text}</a><br/>
+						<a href="mailto:{data.email}">{data.email}</a> <br/>{data.phone.join(' / ')}
+					</p>
 					<h3>{data.social.title}</h3>
 					<ul class="social-icons">
 						{#each data.social.items as item, i}

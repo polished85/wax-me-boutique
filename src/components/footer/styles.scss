@@ -42,6 +42,12 @@
 		color: #fff;
 		border-color: #fff;
 	}
+	.content p a {
+		color: #aaa;
+		&:hover {
+			text-decoration: none;
+		}
+	}
 	.social-icons {
 		list-style: none;
 		padding: 0;
