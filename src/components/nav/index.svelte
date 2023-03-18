@@ -28,7 +28,6 @@
 	    navClass = ''
 	  }
 	} 
-
 </script>
 
 <svelte:window on:scroll={toggleSticky}/>
@@ -72,11 +71,14 @@
 										</li>
 									{/each}
 								</ul>
+								<svg class="dropdown-arrow" height="16" width="24" style="fill:#111;">
+									<polygon points="12,0 24,16 0,16" />
+								</svg>
 							</div>
 						{/if}
 					</li>
 				{/each}
-			</ul>
+			</ul> 
 		</nav>
 	</div>
 	<div class="overlay-bg {mobileActive ? "is-active" : ""}" on:click={() => { mobileActive = false }}></div>
