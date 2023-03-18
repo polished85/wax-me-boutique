@@ -1,8 +1,36 @@
 {
-	"heading" : "Meet The Professional Behind Your Skincare",
-	"subheading": "Natalia de la Motta - Esthetician/Owner",
-	"image": "/img/natalia.jpg",
-	"text": [
-		"Born and raised in South America, Natalia has always had a passion for beauty, skin care, and waxing. After receiving her esthetics license in 2008, she has found that waxing is the part of skin care that she is most in love with. “I love waxing because it is the fast paced, energetic, and social part of skin care. It brings immediate confidence to my clients and it’s gratifying to be such a positive contribution to their happiness.” Natalia has earned a glowing reputation for her painless and quick Brazilian waxes. Her passion for waxing grows from the wonderful relationships she has built with her clients, making them feel confident and sexy in their skin. “I want every client to feel that they had the best waxing experience with someone they know and trust. I want every client who walks through my doors to feel like they found ‘their girl.’” After working for several spas and waxing salons throughout San Diego, she is now the head of her own salon. Along with offering superior customer service, Natalia is committed to staying current with the industry's latest techniques and products, which she then brings back to her devoted clientele. When Natalia isn't waxing away at the salon, she spends time with her husband, her two beautiful children, and her Maltese dog. Natalia loves living an active, healthy lifestyle; she enjoys hot yoga, running, and cooking!"
-	]
+	"head":{
+		"title": "About Us",
+		"description":"Lorem ipsum dolor sit amet",
+		"keywords":"Lorem ipsum dolor sit amet",
+		"author":"Natalia"
+	},
+	"hero": {
+		"title": "About",
+		"overlay": 0.6,
+		"image": {
+			"ar": "16-9",
+			"fit": "cover",
+			"width": 1920,
+			"height": 1080,
+			"path": "/img/salon.jpg"
+		},
+		"cta": { 
+			"text": "Book an appointment",
+			"url":"https://www.vagaro.com/Users/BusinessWidget.aspx?BusinessID=48649&IsPopup=0&TabsIncluded=1|99|100&b_themeID=&w_type=2&widgetversion=3&isShowMobileApp=False&tabatlaunch=3"
+		}
+	},
+	"main": {
+		"title": "About Us",
+		"sections": [
+			{
+				"title": "Lorem ipsum dolor sit amet",
+				"image": null,
+				"text": [
+					"Sea quando aperiam vivendo, dicat facilisi cum et, cu alii utinam definitiones eam. Doming deseruisse ex sea. Minimum percipit an usu, ad cum stet reprimique. Id eum consulatu appellantur definitiones, an his unum utamur offendit. No ferri antiopam oportere pro. Simul accommodare usu ut, vel cibo vidit eruditi eu.",
+					"Usu duis wisi definiebas at, et pro nonumes mandamus. Ex odio insolens vim, at vix sonet alterum deterruisset, ad probo luptatum neglegentur mei. Per at omnes everti. Inimicus expetenda quo cu, nisl cibo possit qui ut. Duo an duis velit iracundia. An nobis praesent duo, mucius labitur et sed, affert accumsan instructior vis ea."
+				]
+			}
+		]
+	}
 }
