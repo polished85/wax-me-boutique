@@ -1,0 +1,82 @@
+<script>
+	import Hero from '$lib/hero/index.svelte';
+	import Reservation from '$lib/reservation/index.svelte';
+	export let data;
+</script>
+
+<style lang="scss">
+	@import '$lib/../style/variables.scss';
+	h1 {
+		margin-bottom: 6rem;
+	}
+	.main {
+		padding: 6rem 0;
+	}
+	.section {
+		margin-bottom: 6rem;
+	}
+
+	@media(max-width: $screen-sm-down){
+
+	}
+	@media(min-width: $screen-md-up){
+		h2.title {
+			text-align: right;
+			&:after {
+				margin-right: 0;
+			}
+		}
+		.text {
+			padding-left: 2rem;
+		}
+	}
+</style>
+
+<svelte:head>
+	<title>{data.head.title}</title>
+	<meta name="description" content="{data.head.description}">
+	<meta name="keywords" content="{data.head.keywords}">
+	<meta name="author" content="{data.head.author}">
+</svelte:head>
+
+{#if data.hero}
+	<Hero data={data.hero}/>
+{/if}
+
+<main class="main">
+	<div class="container">
+		<h1>{data.main.title}</h1>
+		{#each data.main.sections as section, i}
+			<div class="section">
+				<div class="row">
+					<div class="col-12 col-md-4">
+						<h2 class="title">{section.title}</h2>
+					</div>
+					<div class="col-12 col-md-8">
+						{#if section.text}
+							{#each section.text as text, i}
+								<p class="text">{@html text}</p>
+							{/each}
+						{/if}
+						{#if section.list}
+							{#if section.list.type === 'ordered'}
+								<ol>
+								{#each section.list.items as listItem, i}
+									<li>{listItem}</li>
+								{/each}
+								</ol>
+							{:else}
+								<ul>
+								{#each section.list.items as listItem, i}
+									<li>{listItem}</li>
+								{/each}
+								</ul>
+							{/if}
+						{/if}
+					</div>
+				</div>
+			</div>
+		{/each}
+	</div>
+</main>
+<Reservation data="{data.global.reservation}" />
