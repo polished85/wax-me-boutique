@@ -18,6 +18,9 @@
 			{#if data.title}
 				<div class="title">{data.title}</div>
 			{/if}
+			{#if data.description}
+				<div class="description">{@html data.description}</div>
+			{/if}
 			{#if data.cta}
 				<a href="{data.cta.url}" class="btn-primary dark">{data.cta.text}</a>
 			{/if}
