@@ -1,0 +1,26 @@
+@import "../../style/variables.scss";
+
+.services-list {
+	margin-bottom: 6rem;
+	ul {
+		margin: 0 0 1em 0;
+		padding: 0;
+		line-height: 1.5;
+		list-style: none;
+		li {
+			border-bottom: 1px solid $theme_main;
+			a {
+				display: block;
+				padding: 1rem;
+				color: $theme_main;
+				font-size: 1.5rem;
+				font-weight: 700;
+				text-decoration: none;
+				&:hover {
+					background-color: $theme_lavender;
+					color: #000;
+				}
+			}
+		}
+	}
+}
