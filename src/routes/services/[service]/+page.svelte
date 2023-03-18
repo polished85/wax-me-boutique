@@ -51,9 +51,26 @@
 						<h2 class="title">{section.title}</h2>
 					</div>
 					<div class="col-12 col-md-8">
-						{#each section.text as text, i}
-							<p class="text">{@html text}</p>
-						{/each}
+						{#if section.text}
+							{#each section.text as text, i}
+								<p class="text">{@html text}</p>
+							{/each}
+						{/if}
+						{#if section.list}
+							{#if section.list.type === 'ordered'}
+								<ol>
+								{#each section.list.items as listItem, i}
+									<li>{listItem}</li>
+								{/each}
+								</ol>
+							{:else}
+								<ul>
+								{#each section.list.items as listItem, i}
+									<li>{listItem}</li>
+								{/each}
+								</ul>
+							{/if}
+						{/if}
 					</div>
 				</div>
 			</div>
