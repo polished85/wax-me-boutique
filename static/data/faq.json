@@ -1,0 +1,84 @@
+{
+	"head":{
+		"title": "Salon FAQ",
+		"description":"Lorem ipsum dolor sit amet",
+		"keywords":"Lorem ipsum dolor sit amet",
+		"author":"Natalia"
+	},
+	"main": {
+		"title": "Salon FAQ",
+		"sections": [
+			{
+				"title": "How often should I get a facial?",
+				"image": null,
+				"text": [
+					"Every 4&ndash;6 weeks is ideal. Coming in for routine facials is a great way to heal damaged skin, prevent signs of aging and maintain healthy glowing skin."
+				]
+			},
+			{
+				"title": "How should I prepare for my first facial?",
+				"image": null,
+				"text": [
+					"Please arrive on time, and with a bare face. If you cannot remove your makeup, a double cleansing will be provided but please note this will cut into your appointment time. Please have a detailed list of products you are currently using at home, or bring them with you.",
+					"At each facial we discuss your skincare concerns with you. We will then cleanse and then asses your skin. From there we will choose a facial that will be best suited to your skin's needs. This may include masking, extractions, custom beauty cocktail infusions, light therapy, etc. After your appointment we can help you set up an at-home care routine that will leave you glowing!"
+				]
+			},
+			{
+				"title": "What product line do you use in your facial services?",
+				"image": null,
+				"text": [
+					"The only lines that we use are Image, Le Mieux, Skin Script and PCA skin. We love these brands due to their dedication to staying as natural as possible while still delivering results that are only possible to achieve when using high levels of active ingredients. All of which offer an incredible source for safe, effective skin care with no preservatives, no synthetics, dyes or perfumes."
+				]
+			},
+			{
+				"title": "Can I still get facial while pregnant?",
+				"image": null,
+				"text": [
+					"Absolutely! If you are expecting, just be sure to let us know so we can use products that are pregnancy safe. This is a great way to pamper yourself too!"
+				]
+			},
+			{
+				"title": "Can I get Microcurrent done after getting Botox/fillers?",
+				"image": null,
+				"text": [
+					"No! Microcurrent cannot be performed for about 14 days after getting Botox/fillers."
+				]
+			},
+			{
+				"title": "Do I need to do anything to prepare before getting waxed?",
+				"image": null,
+				"text": [
+					"It is important to stop using any skincare actives (AHA, BHA, Retinol, etc.) at least 4 days before your appointment. This will help prevent dry skin, irritation and skin lifting."
+				]
+			},
+			{
+				"title": "How long does the hair need to be for a bikini/Brazilian wax?",
+				"image": null,
+				"text": [
+					"About 1/4&rdquo; long is perfect. Think of the length of a sprinkle or a grain of rice."
+				]
+			},
+			{
+				"title": "How long will the results last?",
+				"image": null,
+				"text": [
+					"Brows last about 4&ndash;6 weeks; be sure not to tweeze between appointments for best results. A bikini/Brazilian wax will last about 4 weeks; be sure not to shave between appointments so that your hair can all get on the same growth cycle. It takes about 3 waxes to get all your hair on the same growth cycle. Put down the tweezer/razor and be patient. It's worth it in the end!"
+				]
+			},
+			{
+				"title": "Can I have a waxing service during my facial?",
+				"image": null,
+				"text": [
+					"Yes. This is done routinely and is no problem to accommodate."
+				]
+			},
+			{
+				"title": "Do you wax men?",
+				"image": null,
+				"text": [
+					"Yes ! However, we do not offer male Brazilian waxing at this time."
+				]
+			}
+		]
+	}
+}

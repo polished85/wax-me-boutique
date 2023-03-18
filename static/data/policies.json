@@ -1,0 +1,28 @@
+{
+	"head":{
+		"title": "Salon Policies",
+		"description":"Lorem ipsum dolor sit amet",
+		"keywords":"Lorem ipsum dolor sit amet",
+		"author":"Natalia"
+	},
+	"main": {
+		"title": "Salon Policies",
+		"sections": [
+			{
+				"title": "How often should I get a facial?",
+				"image": null,
+				"text": [
+					"In order to provide you and other clients with excellent customer service and access to appointments, we have a 24hr cancellation policy.",
+					"<em>Cancelations with less than 24- hour notice, will be charged 50%of the service value.</em>",
+					"<em>As a courtesy, remember to call us as soon as you know that you will be unable to make your appointment, and we’d be happy to reschedule it for you.</em>",
+					"<em>All NO-SHOW appointments will be charged 100% of the service value.</em>",
+					"Please arrive 10 minutes prior to your scheduled appointment. We understand that sometimes being late is unavoidable. However, depending on circumstances, we may be forced to shorten or reschedule your service.",
+					"Guest under the age of 18 must have a parent or guardian book the appointment for them before receiving services.",
+					"Gift cards can be purchased at the front desk or online. Gift cards are treated as cash and all lost or stolen gift cards are not replaceable. Our gift cards never expire for their cash value. All sales are final.",
+					"Gratuities are always appreciated.",
+					"We accept cash, all major credit cards, venmo and apple pay."
+				]
+			}
+		]
+	}
+}
