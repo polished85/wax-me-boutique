@@ -1,4 +1,8 @@
 {
+	"nav":{
+		"type": "absolute",
+		"theme": "dark"
+	},
 	"head": {
 		"layout": "services",
 		"title": "Facial Treatments",

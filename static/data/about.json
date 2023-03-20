@@ -1,4 +1,8 @@
 {
+	"nav":{
+		"type": "relative",
+		"theme": "light"
+	},
 	"head":{
 		"title": "About Us",
 		"description":"Lorem ipsum dolor sit amet",
