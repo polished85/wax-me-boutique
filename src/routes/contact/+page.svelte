@@ -76,5 +76,5 @@
 			</div>
 		</div>
 	</div>
-	<Reservation></Reservation>
 </main>
+<Reservation data="{data.global.reservation}" />
