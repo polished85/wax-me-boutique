@@ -1,11 +1,16 @@
 @import "../../style/variables.scss";
 
 .header {
-	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 3;
+	&.light {
+		background-color: #f4f4f3;
+	}
+	&.dark {
+
+	}
 	.logo {
 		flex-basis: 100px;
 		flex-grow: 0;
@@ -69,26 +74,82 @@
     		}
 		}
 	}
-	&.sticky {
-		position: fixed;
-		&:before {
-			opacity: 1;
-		}
-	}
 
 	@media(max-width: $screen-sm-down){
-		.mobile-logo {
+		&.absolute {
 			position: absolute;
-			top: 15px;
-			left: 50%;
-			margin-left: -50px;
-			background-color: #7f8c26;
-			width: 100px;
-			height: 100px;
-			border-radius: 100px;
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-position: center;
+		}
+		&.relative {
+			position: relative;
+		}
+		&.light {
+			.mobile-nav {
+				.btn-toggle-nav {
+					color: #444;
+					&.active {
+						color: #fff;
+					}
+				}
+			}
+		}
+		&.dark {
+			.mobile-nav {
+				.btn-toggle-nav {
+					color: #fff;
+				}
+			}
+		}
+		&.sticky {
+			position: fixed;
+			&:before {
+				opacity: 1;
+			}
+		}
+		.mobile-nav {
+			display: flex;
+			justify-content: center;
+			.mobile-logo {
+				position: relative;
+				top: 15px;
+				background-color: #7f8c26;
+				width: 100px;
+				height: 100px;
+				border-radius: 100px;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			.btn-toggle-nav {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				justify-self: flex-end;
+				position: absolute;
+				top: 50%;
+				right: 15px;
+				width: 40px;
+				height: 40px;
+				padding: 3px;
+				background: none;
+				z-index: 1;
+				cursor: pointer;
+				color: #fff;
+				border: 0;
+				margin-top: -20px;
+				&:hover,
+				&:focus {
+					outline: 0;
+				}
+				&:active {
+					background: rgba(0,0,0,.25);
+				}
+				&.is-active {
+					color: #fff;
+					+ nav {
+						
+					}
+				}
+			}
 		}
 		.overlay-bg {
 			position: fixed;
@@ -189,42 +250,57 @@
 		    		}
 		    	}
 		    }
-		}
-		.btn-toggle-nav {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			position: absolute;
-			top: 15px;
-			right: 15px;
-			width: 40px;
-			height: 40px;
-			padding: 3px;
-			background: none;
-			z-index: 1;
-			cursor: pointer;
-			color: #fff;
-			border: 0;
-
-			&:hover,
-			&:focus {
-				outline: 0;
-			}
-			&:active {
-				background: rgba(0,0,0,.25);
-			}
-			&.is-active {
-				color: #fff;
-				+ nav {
-					transform: translateX(0);
-					overflow: auto;
-					transition-timing-function: ease-out;
-				}
-			}
+		    &.active {
+				transform: translateX(0);
+				overflow: auto;
+				transition-timing-function: ease-out;
+		    }
 		}
 	}
 
 	@media(min-width: $screen-md-up){
+		&.absolute {
+			position: absolute;
+		}
+		&.relative {
+			position: sticky;
+		}
+		&.light {
+			nav {
+				> ul {
+					> li {
+						> a,
+						> span {
+							color: #444;
+							&::after {
+								background-color: #444;
+							}
+						}
+					}
+				}
+			}
+		}
+		&.dark {
+			nav {
+				> ul {
+					> li {
+						> a,
+						> span {
+							color: rgba(255,255,255,.75);
+							&::after {
+								background-color: #fff;
+							}
+						}
+					}
+				}
+			}
+		}
+		&.sticky {
+			position: fixed;
+			&:before {
+				opacity: 1;
+			}
+		}
 		&:before {
 			content: '';
 			position: absolute;
@@ -237,7 +313,7 @@
 			background-color: #fff;
 			transition: opacity .25s;
 		}
-		.mobile-logo {
+		.mobile-nav {
 			display: none;
 		}
 		.overlay-bg {
@@ -258,7 +334,6 @@
 			    		font-size: 1.4rem;
 			    		display: inline-block;
 			    		position: relative;
-			    		color: rgba(255,255,255,.75);
 			    		text-align: center;
 			    		padding: 2rem;
 			    		text-decoration: none;
@@ -270,7 +345,6 @@
 							content: '';
 							width: 0;
 							height: 1px;
-							background-color: #fff;
 							display: block;
 							bottom: -1px;
 							transition: width .25s ease-in-out;
@@ -365,6 +439,7 @@
 			    	&.featured {
 			    		> a {
 			    			background-color: #7f8c26;
+			    			color: #fff;
 			    		}
 			    	}
 		    	}
