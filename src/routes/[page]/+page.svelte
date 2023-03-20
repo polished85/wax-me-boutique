@@ -7,7 +7,19 @@
 <style lang="scss">
 	@import '$lib/../style/variables.scss';
 	h1 {
+		
+	}
+	h2 {
+		text-align: left;
+		&:after {
+			margin-left: 0;
+		}
+	}
+	.heading {
 		margin-bottom: 6rem;
+	}
+	.lead {
+		font-size: 2rem;
 	}
 	.main {
 		padding: 6rem 0;
@@ -20,15 +32,7 @@
 
 	}
 	@media(min-width: $screen-md-up){
-		h2.title {
-			text-align: right;
-			&:after {
-				margin-right: 0;
-			}
-		}
-		.text {
-			padding-left: 2rem;
-		}
+
 	}
 </style>
 
@@ -45,37 +49,40 @@
 
 <main class="main">
 	<div class="container">
-		<h1>{data.main.title}</h1>
+		<div class="heading">
+			{#if data.main.title}
+				<h1>{data.main.title}</h1>
+			{/if}
+			{#if data.main.subTitle}
+				<p class="h2 lead">{@html data.main.subTitle}</p>
+			{/if}
+		</div>
 		{#each data.main.sections as section, i}
-			<div class="section">
-				<div class="row">
-					<div class="col-12 col-md-4">
-						<h2 class="title">{section.title}</h2>
-					</div>
-					<div class="col-12 col-md-8">
-						{#if section.text}
-							{#each section.text as text, i}
-								<p class="text">{@html text}</p>
-							{/each}
-						{/if}
-						{#if section.list}
-							{#if section.list.type === 'ordered'}
-								<ol>
-								{#each section.list.items as listItem, i}
-									<li>{listItem}</li>
-								{/each}
-								</ol>
-							{:else}
-								<ul>
-								{#each section.list.items as listItem, i}
-									<li>{listItem}</li>
-								{/each}
-								</ul>
-							{/if}
-						{/if}
-					</div>
-				</div>
-			</div>
+			<section class="section">
+				{#if section.title}
+					<h2 class="title">{section.title}</h2>
+				{/if}
+				{#if section.text}
+					{#each section.text as text, i}
+						<p class="text">{@html text}</p>
+					{/each}
+				{/if}
+				{#if section.list}
+					{#if section.list.type === 'ordered'}
+						<ol>
+						{#each section.list.items as listItem, i}
+							<li>{listItem}</li>
+						{/each}
+						</ol>
+					{:else}
+						<ul>
+						{#each section.list.items as listItem, i}
+							<li>{listItem}</li>
+						{/each}
+						</ul>
+					{/if}
+				{/if}
+			</section>
 		{/each}
 	</div>
 </main>
