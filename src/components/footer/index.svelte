@@ -27,6 +27,8 @@
 					<p>
 						<a href="{data.faq.url}">{data.faq.text}</a><br/>
 						<a href="{data.policies.url}">{data.policies.text}</a><br/>
+						<a href="{data.privacy.url}">{data.privacy.text}</a><br/>
+						<a href="{data.contact.url}">{data.contact.text}</a><br/>
 						<a href="mailto:{data.email}">{data.email}</a> <br/>{data.phone.join(' / ')}
 					</p>
 					<h3>{data.social.title}</h3>
