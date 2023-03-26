@@ -39,20 +39,12 @@ h1,h2,
 	    border-top: 1px solid #444;
 	}
 }
+sup {
+	font-size: .5em;
+	vertical-align: middle;
+}
 img {
 	max-width: 100%;
-}
-
-@font-face {
-	font-style: normal;
-	font-weight: 700;
-	font-family: 'Montserrat';
-	src: url('/fonts/Montserrat-Bold.eot');
-	src: url('/fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/Montserrat-Bold.woff2') format('woff2'),
-		url('/fonts/Montserrat-Bold.woff') format('woff'),
-		url('/fonts/Montserrat-Bold.otf') format('opentype'),
-		url('/fonts/Montserrat-Bold.ttf')  format('truetype');
 }
 
 .btn-primary {
