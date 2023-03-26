@@ -1,7 +1,3 @@
-<style lang="scss" global>
-	@import "./styles.scss";
-</style>
-
 <script>
 	import { MapPinIcon } from 'svelte-feather-icons';
 	import Modal from '$lib/modal/index.svelte';
@@ -17,6 +13,9 @@
 	}
 </script>
 
+<style lang="scss" global>
+	@import "./styles.scss";
+</style>
 
 <footer class="footer">
 	<div class="container">

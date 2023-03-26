@@ -1,10 +1,10 @@
-<style lang="scss">
-	@import "./styles.scss";
-</style>
-
 <script>
 	export let data;
 </script>
+
+<style lang="scss">
+	@import "./styles.scss";
+</style>
 
 <div class="image">
 	<figure class="ar-{data.ar} fit-{data.fit}">

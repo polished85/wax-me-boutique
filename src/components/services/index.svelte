@@ -1,10 +1,10 @@
-<style lang="scss" global>
-	@import "./styles.scss";
-</style>
-
 <script>
 	export let data;
 </script>
+
+<style lang="scss" global>
+	@import "./styles.scss";
+</style>
 
 <section class="services-list">
 	<div class="container">

@@ -1,12 +1,12 @@
-<style lang="scss" global>
-	@import "./styles.scss";
-</style>
-
 <script>
 	import { XIcon } from 'svelte-feather-icons';
 	export let modalOpen 
 	export let closeModal
 </script>
+
+<style lang="scss" global>
+	@import "./styles.scss";
+</style>
 
 <div class="modal {modalOpen ? 'open' : ''}" on:click={closeModal}>
 	<div class="modal-content">

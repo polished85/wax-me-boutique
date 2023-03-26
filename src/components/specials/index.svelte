@@ -1,11 +1,11 @@
-<style lang="scss" global>
-	@import "./styles.scss";
-</style>
-
 <script>
 	export let data;
 	let active = 0
 </script>
+
+<style lang="scss" global>
+	@import "./styles.scss";
+</style>
 
 <div class="specials">
 	<div class="container">

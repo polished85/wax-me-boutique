@@ -1,16 +1,5 @@
 <!-- https://github.com/beyonk-adventures/svelte-carousel -->
 <!-- https://vue-feather-icons.egoist.sh/ -->
-<style lang="scss" global>
-	@import "./styles.scss";
-
-	button :global(.control) {
-
-	}
-	.control :global(svg) {
-
-	}
-</style>
-
 <script>
 	// import Carousel from '@beyonk/svelte-carousel'
 	import { onMount } from 'svelte'
@@ -57,6 +46,16 @@
 	}
 </script>
 
+<style lang="scss" global>
+	@import "./styles.scss";
+
+	button :global(.control) {
+
+	}
+	.control :global(svg) {
+
+	}
+</style>
 
 <div class="carousel">
 	<button on:click={() => goToSlide(active !== 0 ? active - 1 : active)} class="control control-left">

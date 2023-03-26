@@ -1,3 +1,8 @@
+<script>
+	import Reservation from '$lib/reservation/index.svelte';
+	export let data;
+</script>
+
 <style lang="scss">
 	.contact-page {
 		padding: 4.5rem 0 9rem;
@@ -45,11 +50,6 @@
 <svelte:head>
 	<title>Contact</title>
 </svelte:head>
-
-<script>
-	import Reservation from '$lib/reservation/index.svelte';
-	export let data;
-</script>
 
 <main class="contact-page">
 	<div class="container">

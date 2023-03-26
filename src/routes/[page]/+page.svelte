@@ -1,6 +1,5 @@
 <script>
 	import Hero from '$lib/hero/index.svelte';
-	
 	export let data;
 </script>
 

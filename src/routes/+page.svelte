@@ -1,12 +1,3 @@
-<style lang="scss">
-	.hero {
-		margin-bottom: 3rem;
-	}
-	.intro {
-		margin-bottom: 6rem
-	}
-</style>
-
 <script>
 	import Image from '$lib/image/index.svelte';
 	import Hero from '$lib/hero/index.svelte';
@@ -15,6 +6,15 @@
 	
 	export let data; 
 </script>
+
+<style lang="scss">
+	.hero {
+		margin-bottom: 3rem;
+	}
+	.intro {
+		margin-bottom: 6rem
+	}
+</style>
 
 <Hero data={data.hero}/>
 

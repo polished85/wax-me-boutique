@@ -1,7 +1,3 @@
-<style lang="scss" global>
-	@import "./styles.scss";
-</style>
-
 <script>
 	import Image from '$lib/image/index.svelte';
 	
@@ -15,6 +11,10 @@
 	// 	path: '/img/laser-therapy.jpg'
 	// }
 </script>
+
+<style lang="scss" global>
+	@import "./styles.scss";
+</style>
 
 <div class="our-team">
 

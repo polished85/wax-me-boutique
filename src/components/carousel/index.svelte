@@ -1,14 +1,3 @@
-<style lang="scss" global>
-	@import "./styles.scss";
-
-	button :global(.control) {
-
-	}
-	.control :global(svg) {
-
-	}
-</style>
-
 <script>
 	import { onMount } from 'svelte';
 	import Siema from 'siema';
@@ -31,6 +20,16 @@
 
 </script>
 
+<style lang="scss" global>
+	@import "./styles.scss";
+
+	button :global(.control) {
+
+	}
+	.control :global(svg) {
+
+	}
+</style>
 
 <div class="carousel">
 	<button type="button" class="nav-btn prev-btn" on:click={() => carousel.prev()}>

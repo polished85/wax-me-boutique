@@ -1,7 +1,3 @@
-<style lang="scss" global>
-	@import "./styles.scss";
-</style>
-
 <script>
 	import { onMount } from 'svelte'
 	import { PauseIcon,  PlayIcon, RefreshCwIcon, Volume2Icon, VolumeXIcon } from 'svelte-feather-icons'
@@ -64,6 +60,10 @@
 		return `${minutes}:${seconds}`
 	}
 </script>
+
+<style lang="scss" global>
+	@import "./styles.scss";
+</style>
 
 <div class="video-hero">
 	<div class="container">

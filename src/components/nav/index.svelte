@@ -1,7 +1,3 @@
-<style lang="scss" global>
-	@import "./styles.scss"
-</style>
-
 <script>
 	import { onMount } from 'svelte';
 	import { XIcon, MenuIcon } from 'svelte-feather-icons';
@@ -31,6 +27,10 @@
 	} 
 	
 </script>
+
+<style lang="scss" global>
+	@import "./styles.scss"
+</style>
 
 <svelte:window on:scroll={toggleSticky}/>
 
