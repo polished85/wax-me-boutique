@@ -41,7 +41,9 @@ h1,h2,
 }
 sup {
 	font-size: .5em;
-	vertical-align: middle;
+	line-height: 1em;
+	vertical-align: top;
+	top: 0;
 }
 img {
 	max-width: 100%;
