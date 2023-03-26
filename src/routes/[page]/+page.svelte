@@ -1,6 +1,6 @@
 <script>
 	import Hero from '$lib/hero/index.svelte';
-	import Reservation from '$lib/reservation/index.svelte';
+	
 	export let data;
 </script>
 
@@ -86,4 +86,3 @@
 		{/each}
 	</div>
 </main>
-<Reservation data="{data.global.reservation}" />

@@ -10,7 +10,6 @@
 <script>
 	import Image from '$lib/image/index.svelte';
 	import Hero from '$lib/hero/index.svelte';
-	import Reservation from '$lib/reservation/index.svelte';
 	import OurTeam from '$lib/team/index.svelte';
 	import Instagram from '$lib/instagram/index.svelte';
 	
@@ -33,5 +32,4 @@
 	<OurTeam data={data.team}></OurTeam>
 	<Image data="{data.intro.image}"></Image>
 	<Instagram />
-	<Reservation data="{data.global.reservation}" />
 </main>

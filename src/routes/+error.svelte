@@ -2,7 +2,6 @@
  	import { page } from '$app/stores';
  	import Hero from '$lib/hero/index.svelte';
  	import Services from '$lib/services/index.svelte';
- 	import Reservation from '$lib/reservation/index.svelte';
 
  	export let data;
  	data.global.error.hero.title = $page.status + ': ' + $page.error.message
@@ -23,5 +22,4 @@
 <Hero data={data.global.error.hero}/>
 <main class="main">
 	<Services data={servicesData} />
-	<Reservation data="{data.global.reservation}" />
 </main>

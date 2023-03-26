@@ -1,7 +1,6 @@
 <script>
 	import Hero from '$lib/hero/index.svelte';
 	import Services from '$lib/services/index.svelte';
-	import Reservation from '$lib/reservation/index.svelte';
 
 	export let data;
 	let servicesData = {
@@ -22,5 +21,4 @@
 
 <main class="main">
 	<Services data={servicesData} />
-	<Reservation data="{data.global.reservation}" />
 </main>
