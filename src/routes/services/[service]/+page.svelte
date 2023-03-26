@@ -95,6 +95,7 @@
 							{/each}
 						</ol>
 					</div>
+				</div>
 			</div>
 		</section>
 	{/if}
