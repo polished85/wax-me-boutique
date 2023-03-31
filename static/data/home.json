@@ -1,11 +1,10 @@
-
 {
 	"nav":{
 		"type": "absolute",
 		"theme": "dark"
 	},
 	"hero": {
-		"title": "Welcome to Wax Me Skincare Boutique",
+		"title": null,
 		"overlay": 0.6,
 		"image": {
 			"ar": "16-9",

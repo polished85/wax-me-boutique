@@ -14,7 +14,7 @@
 	"hero" :{
 		"theme": "light",
 		"color": "lavender",
-		"title": "Sunless Tan",
+		"title": null,
 		"overlay": 0.6,
 		"image": {
 			"ar": "16-7",

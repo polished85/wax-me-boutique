@@ -14,7 +14,7 @@
 	"hero" :{
 		"theme": "light",
 		"color": "blue",
-		"title": "Facial Treatments",
+		"title": null,
 		"overlay": 0.6,
 		"image": {
 			"ar": "16-7",
@@ -55,7 +55,7 @@
 		]
 	},
 	"main": {
-		"title": null,
+		"title": "Facial Treatments",
 		"sections": [
 			{
 				"title": "Rezenerate<sup>TM</sup> <br/>Nano Facial",
