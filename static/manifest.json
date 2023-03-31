@@ -1,8 +1,8 @@
 {
 	"background_color": "#ffffff",
-	"theme_color": "#333333",
-	"name": "TODO",
-	"short_name": "TODO",
+	"theme_color": "#7f8c26",
+	"name": "Wax Me Skincare Boutique",
+	"short_name": "Wax Me Boutique",
 	"display": "minimal-ui",
 	"start_url": "/",
 	"icons": [
