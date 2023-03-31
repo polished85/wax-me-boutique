@@ -5,6 +5,7 @@
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
+    "start": "node build/index.js",
     "lint": "prettier --plugin-search-dir . --check . && eslint .",
     "format": "prettier --plugin-search-dir . --write ."
   },
@@ -13,6 +14,7 @@
     "@fontsource/fira-mono": "^4.5.10",
     "@neoconfetti/svelte": "^1.0.0",
     "@sveltejs/adapter-auto": "^2.0.0",
+    "@sveltejs/adapter-node": "^1.0.0-next.106",
     "@sveltejs/adapter-static": "^2.0.1",
     "@sveltejs/kit": "^1.5.0",
     "eslint": "^8.28.0",
