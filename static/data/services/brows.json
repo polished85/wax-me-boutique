@@ -1,15 +1,13 @@
 {
+	"head": {
+		"title": "Brows",
+		"keywords": "Keratin Brow Lamination, Signature Brow Makeover, Brow Shaping, Teen Brows",
+		"author": "Natalia de la Motta",
+		"date": "7/15/2020"
+	},
 	"nav":{
 		"type": "absolute",
 		"theme": "dark"
-	},
-	"head": {
-		"layout": "services",
-		"title": "Brows",
-		"description": "Keratin Brow Lamination",
-		"keywords": "brows, brow bar",
-		"author": "Natalia de la Motta",
-		"date": "7/15/2020"
 	},
 	"hero" :{
 		"theme": "light",

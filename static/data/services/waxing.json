@@ -1,15 +1,13 @@
 {
+	"head": {
+		"title": "Waxing",
+		"description": "We specialize in a range of men&apos;s and women&apos;s waxing for body and face.",
+		"author": "Natalia de la Motta",
+		"date": "7/15/2020"
+	},
 	"nav":{
 		"type": "absolute",
 		"theme": "dark"
-	},
-	"head": {
-		"layout": "services",
-		"title": "Waxing",
-		"description": "We specialize in a range of men&apos;s and women&apos;s waxing for body and face.",
-		"keywords": "waxing for women",
-		"author": "Natalia de la Motta",
-		"date": "7/15/2020"
 	},
 	"hero" :{
 		"theme": "light",

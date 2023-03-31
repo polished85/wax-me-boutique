@@ -1,15 +1,12 @@
 {
+	"head": {
+		"title": "Sunless Tan",
+		"author": "Natalia de la Motta",
+		"date": "7/15/2020"
+	},
 	"nav":{
 		"type": "absolute",
 		"theme": "dark"
-	},
-	"head": {
-		"layout": "services",
-		"title": "Sunless Tan",
-		"description": "Vitae purus faucibus ornare suspendisse sed nisi lacus sed",
-		"keywords": "sunless tan",
-		"author": "Natalia de la Motta",
-		"date": "7/15/2020"
 	},
 	"hero" :{
 		"theme": "light",

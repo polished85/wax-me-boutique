@@ -1,5 +1,7 @@
-
 {
+	"head":{
+		"title": "Services"
+	},
 	"nav":{
 		"type": "absolute",
 		"theme": "dark"

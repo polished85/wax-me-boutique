@@ -1,15 +1,12 @@
 {
+	"head": {
+		"title": "Facial Treatments",
+		"author": "Natalia de la Motta",
+		"date": "7/15/2020"
+	},
 	"nav":{
 		"type": "absolute",
 		"theme": "dark"
-	},
-	"head": {
-		"layout": "services",
-		"title": "Facial Treatments",
-		"description": "Vitae purus faucibus ornare suspendisse sed nisi lacus sed",
-		"keywords": "facials, corrective peels, and advanced treatments",
-		"author": "Natalia de la Motta",
-		"date": "7/15/2020"
 	},
 	"hero" :{
 		"theme": "light",

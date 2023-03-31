@@ -1,4 +1,7 @@
 {
+	"head":{
+		"title": "Contact"
+	},
 	"nav":{
 		"type": "relative",
 		"theme": "light"

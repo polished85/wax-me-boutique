@@ -1,4 +1,7 @@
 {
+	"head":{
+		"title": "Wax Me Skincare Boutique"
+	},
 	"nav":{
 		"type": "absolute",
 		"theme": "dark"

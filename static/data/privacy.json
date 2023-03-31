@@ -1,13 +1,10 @@
 {
+	"head":{
+		"title": "Privacy Policy"
+	},
 	"nav":{
 		"type": "relative",
 		"theme": "light"
-	},
-	"head":{
-		"title": "Privacy Policy",
-		"description":"Lorem ipsum dolor sit amet",
-		"keywords":"Lorem ipsum dolor sit amet",
-		"author":"Natalia"
 	},
 	"main": {
 		"title": "Privacy Policy",

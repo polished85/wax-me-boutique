@@ -1,13 +1,10 @@
 {
+	"head":{
+		"title": "Salon Policies"
+	},
 	"nav":{
 		"type": "relative",
 		"theme": "light"
-	},
-	"head":{
-		"title": "Salon Policies",
-		"description":"Lorem ipsum dolor sit amet",
-		"keywords":"Lorem ipsum dolor sit amet",
-		"author":"Natalia"
 	},
 	"main": {
 		"title": "Salon Policies",

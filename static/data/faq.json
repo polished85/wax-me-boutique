@@ -1,13 +1,10 @@
 {
+	"head":{
+		"title": "Salon FAQ"
+	},
 	"nav":{
 		"type": "relative",
 		"theme": "light"
-	},
-	"head":{
-		"title": "Salon FAQ",
-		"description":"Lorem ipsum dolor sit amet",
-		"keywords":"Lorem ipsum dolor sit amet",
-		"author":"Natalia"
 	},
 	"main": {
 		"title": "Salon FAQ",
