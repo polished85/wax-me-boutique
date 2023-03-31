@@ -9,6 +9,10 @@
     "lint": "prettier --plugin-search-dir . --check . && eslint .",
     "format": "prettier --plugin-search-dir . --write ."
   },
+  "engines": {    
+    "node": "18.x",
+    "npm": "8.x"
+  },
   "devDependencies": {
     "@beyonk/svelte-carousel": "2.9.0",
     "@fontsource/fira-mono": "^4.5.10",
