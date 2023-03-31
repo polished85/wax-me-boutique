@@ -55,7 +55,7 @@
 					<li class="{link.type}" class:active='{pageName.toLowerCase() === link.name.toLowerCase()}' 
 						on:click={() => { mobileActive = false }}>
 						{#if link.type !== 'dropdown'}
-							<a rel='{link.external ? "external" : ""}' href='{link.url}'>
+							<a rel='{link.external ? "external" : null}' target='{link.external ? "_blank" : null}' href='{link.url}'>
 								{#if link.type == 'logo'}
 									<span>{link.name}</span>
 									<img src="{data.logo.src}" alt="{data.logo.alt}" />
