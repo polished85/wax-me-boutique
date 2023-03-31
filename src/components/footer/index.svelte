@@ -44,7 +44,7 @@
 			<div class="col-12 col-md-6 col-lg-3">
 				<div class="content">
 					<h3>Address</h3>
-					<p>{data.address}</p>
+					<address>{data.address}</address>
 					<button type="button" class="btn-primary btn-map" on:click={openModal}>
 						<MapPinIcon size="20" />
 						<span>Map</span>
@@ -68,7 +68,7 @@
 			<div class="col-12 col-md-6 col-lg-3">
 				<div class="content">
 					<h3>{data.reservation.title}</h3>
-					<p><em>{data.reservation.text}</em></p>
+					<p>{data.reservation.text}</p>
 					<a href="{data.reservation.cta.url}" target="_blank" class="btn-primary">{data.reservation.cta.text}</a>
 
 				</div>
