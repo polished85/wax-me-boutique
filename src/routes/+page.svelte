@@ -31,7 +31,9 @@
 	{/if}
 </svelte:head>
 
-<Hero data={data.hero}/>
+{#if data.hero}
+	<Hero data={data.hero}/>
+{/if}
 
 <main class="main">
 

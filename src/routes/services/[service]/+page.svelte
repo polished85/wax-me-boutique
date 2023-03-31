@@ -67,22 +67,26 @@
 	}
 </style>
 
-<svelte:head>
-	{#if data.head.title}
-		<title>{data.head.title}</title>
-	{/if}
-	{#if data.head.description}
-		<meta name="description" content="{data.head.description}">
-	{/if}
-	{#if data.head.keywords}
-		<meta name="keywords" content="{data.head.keywords}">
-	{/if}
-	{#if data.head.author}
-		<meta name="author" content="{data.head.author}">
-	{/if}
-</svelte:head>
+{#if data.head}
+	<svelte:head>
+		{#if data.head.title}
+			<title>{data.head.title}</title>
+		{/if}
+		{#if data.head.description}
+			<meta name="description" content="{data.head.description}">
+		{/if}
+		{#if data.head.keywords}
+			<meta name="keywords" content="{data.head.keywords}">
+		{/if}
+		{#if data.head.author}
+			<meta name="author" content="{data.head.author}">
+		{/if}
+	</svelte:head>
+{/if}
 
-<Hero data={data.hero}/>
+{#if data.hero}
+	<Hero data={data.hero}/>
+{/if}
 
 <main class="main">
 	
