@@ -49,6 +49,15 @@
 
 <svelte:head>
 	<title>Contact</title>
+	{#if data.head.description}
+		<meta name="description" content="{data.head.description}">
+	{/if}
+	{#if data.head.keywords}
+		<meta name="keywords" content="{data.head.keywords}">
+	{/if}
+	{#if data.head.author}
+		<meta name="author" content="{data.head.author}">
+	{/if}
 </svelte:head>
 
 <main class="contact-page">
