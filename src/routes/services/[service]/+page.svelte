@@ -77,9 +77,14 @@
 <Hero data={data.hero}/>
 
 <main class="main">
+	
+
 	{#if data.featured}
 		<section class="section-featured">
 			<div class="container">
+				{#if data.main.title}
+					<h1>{data.main.title}</h1>
+				{/if}
 				<div class="row">
 					<div class="col-12 col-md-5">
 						<h2 class="h1 title">{data.featured.title}</h2>
@@ -99,13 +104,13 @@
 			</div>
 		</section>
 	{/if}
-
-	{#if data.main.title}
+	
+	{#if data.main.title && !data.featured}
 		<div class="container">
 			<h1>{data.main.title}</h1>
 		</div>
 	{/if}
-	
+
 	{#each data.main.sections as section, i}
 		<div class="section">
 			<div class="container">
